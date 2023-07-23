@@ -111,26 +111,28 @@ export const headerData: HeaderProps = {
       href: '/contact',
     },
     {
-      label: <MobileStoreButton store="ios" url={''} linkProps={{ title: 'iOS Store Button' }} />,
+      labelElement: <MobileStoreButton store="ios" url={''} linkProps={{ title: 'iOS Store Button' }} />,
       href: '/subscribe',
     },
     {
-      label: <MobileStoreButton store="android" url={'/subscribe'} linkProps={{ title: 'Android Store Button' }} />,
+      labelElement: (
+        <MobileStoreButton store="android" url={'/subscribe'} linkProps={{ title: 'Android Store Button' }} />
+      ),
       href: '/subscribe',
     },
   ],
   actions: [
-    {
-      // text: (
-      //   <>
-      //     <MobileStoreButton store="ios" url={''} linkProps={{ title: 'iOS Store Button' }} />
-      //     <MobileStoreButton store="android" url={''} linkProps={{ title: 'Android Store Button' }} />
-      //   </>
-      // ),
-      // href: '/subscribe',
-      // targetBlank: true,
-      // btnType: 'primary',
-    },
+    // {
+    // text: (
+    //   <>
+    //     <MobileStoreButton store="ios" url={''} linkProps={{ title: 'iOS Store Button' }} />
+    //     <MobileStoreButton store="android" url={''} linkProps={{ title: 'Android Store Button' }} />
+    //   </>
+    // ),
+    // href: '/subscribe',
+    // targetBlank: true,
+    // btnType: 'primary',
+    // },
   ],
   isSticky: true,
   showToggleTheme: true,
@@ -1261,6 +1263,7 @@ export const subscribeData: SubscribeProps = {
   ],
   form: {
     title: 'Ready to Get Started?',
+    action: '/api/subscribe',
     description:
       'Mauris consequat, urna vel varius auctor, enim risus ornare felis, at hendrerit erat justo eu justo. Curabitur sagittis efficitur aliquam. Duis eget porttitor lectus, vel pharetra ex. Nam volutpat nibh ut porta egestas.',
     inputs: [

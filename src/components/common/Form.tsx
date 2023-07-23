@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { FormProps } from '../../shared/types';
 
-const Form = ({ title, description, inputs, radioBtns, textarea, checkboxes, btn, btnPosition }: FormProps) => {
+const Form = ({ title, action, description, inputs, radioBtns, textarea, checkboxes, btn, btnPosition }: FormProps) => {
   const [inputValues, setInputValues] = useState([]);
   const [radioBtnValue, setRadioBtnValue] = useState('');
   const [textareaValues, setTextareaValues] = useState('');
@@ -44,7 +44,7 @@ const Form = ({ title, description, inputs, radioBtns, textarea, checkboxes, btn
     <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
       {title && <h2 className={`${description ? 'mb-2' : 'mb-4'} text-2xl font-bold`}>{title}</h2>}
       {description && <p className="mb-4">{description}</p>}
-      <form id="contactForm">
+      <form id="contactForm" action={action}>
         <div className="mb-6">
           {/* Inputs */}
           <div className="mx-0 mb-1 sm:mb-4">

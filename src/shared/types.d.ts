@@ -14,7 +14,7 @@ interface HeaderWidgetProps {
 }
 
 interface CallToAction {
-  text: string | ReactElement;
+  text: string;
   href: string;
   icon?: Function;
   targetBlank?: boolean;
@@ -66,6 +66,7 @@ interface SmallForm {
 
 interface FormProps {
   title?: string;
+  action?: string;
   description?: string;
   inputs: Array<Input>;
   radioBtns?: RadioBtn;
@@ -108,7 +109,8 @@ interface Testimonial {
 }
 
 interface Link {
-  label?: string | ReactElement;
+  label?: string;
+  labelElement?: ReactElement;
   href?: string;
   ariaLabel?: string;
   icon?: Function;
@@ -246,6 +248,7 @@ interface ContactProps {
 
 interface SubscribeProps {
   header?: Header;
+  action?: string;
   content?: string;
   items: Array<Item>;
   form: FormProps;

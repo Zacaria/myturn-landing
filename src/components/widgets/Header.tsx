@@ -78,7 +78,7 @@ const Header = () => {
         >
           <ul className="flex w-full flex-col pt-8 text-xl md:w-auto md:flex-row md:self-center md:pt-0 md:text-base">
             {links &&
-              links.map(({ label, href, icon: Icon, links }, index) => (
+              links.map(({ label, labelElement, href, icon: Icon, links }, index) => (
                 <li key={`item-link-${index}`} className={links?.length ? 'dropdown' : ''}>
                   {links && links.length ? (
                     <>
@@ -93,7 +93,7 @@ const Header = () => {
                           isDropdownOpen[index] ? 'block' : 'md:hidden'
                         } rounded pl-4 font-medium drop-shadow-xl md:absolute md:min-w-[200px] md:bg-white/90 md:pl-0 md:backdrop-blur-md dark:md:bg-slate-900/90`}
                       >
-                        {links.map(({ label: label2, href: href2 }, index2) => (
+                        {links.map(({ label: label2, labelElement: labelElement2, href: href2 }, index2) => (
                           <li key={`item-link-${index2}`}>
                             <Link
                               className="whitespace-no-wrap block py-2 px-5 first:rounded-t last:rounded-b dark:hover:bg-gray-700 md:hover:bg-gray-200"
@@ -102,7 +102,7 @@ const Header = () => {
                                 isToggleMenuOpen ? handleToggleMenuOnClick() : handleCloseDropdownOnClick(index)
                               }
                             >
-                              {label2}
+                              {labelElement2 || label2}
                             </Link>
                           </li>
                         ))}
@@ -114,7 +114,7 @@ const Header = () => {
                       href={href as string}
                       onClick={() => (isToggleMenuOpen ? handleToggleMenuOnClick() : handleDropdownOnClick(index))}
                     >
-                      {label}
+                      {labelElement || label}
                     </Link>
                   )}
                 </li>

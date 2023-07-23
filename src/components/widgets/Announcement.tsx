@@ -5,7 +5,7 @@ const Announcement = () => {
   const { title, callToAction, callToAction2, enable } = announcementData;
 
   if (!enable) {
-    return <></>;
+    return null;
   }
 
   return (
