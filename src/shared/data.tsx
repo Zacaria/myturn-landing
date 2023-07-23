@@ -895,7 +895,7 @@ export const testimonialData: TestimonialProps = {
 // Pricing data
 export const pricingData: PricingProps = {
   header: {
-    title: 'Prices for each plan',
+    title: 'One unique price',
     subtitle:
       'Proin eget vestibulum sem, vel ultrices ligula. Vestibulum in eleifend lectus, non mollis odio. Donec nibh ipsum, suscipit non pulvinar quis, lobortis ac lorem.',
     // highlight: 'Pricing',
@@ -903,10 +903,10 @@ export const pricingData: PricingProps = {
   prices: [
     {
       title: 'basic',
-      value: 29,
+      value: 5,
       period: 'per month',
       texts: [
-        'Etiam in libero',
+        'Organise',
         'Aenean ac nunc',
         'Cras scelerisque accumsan libero, et volutpat dolor tristique at',
         'In hac habitasse',
@@ -917,34 +917,34 @@ export const pricingData: PricingProps = {
       },
       hasRibbon: false,
     },
-    {
-      title: 'standard',
-      value: 69,
-      period: 'per month',
-      texts: ['Proin vel laoreet', 'Ut efficitur egestas', 'Pellentesque ut nibh', 'Donec fringilla sem'],
-      callToAction: {
-        text: 'Free 15-day trial',
-        href: '/',
-      },
-      hasRibbon: true,
-      ribbonTitle: 'Popular',
-    },
-    {
-      title: 'premium',
-      value: 199,
-      period: 'per month',
-      texts: [
-        'Curabitur suscipit risus',
-        'Aliquam blandit malesuada',
-        'Suspendisse sit amet',
-        'Suspendisse auctor dui',
-      ],
-      callToAction: {
-        text: 'Free 30-day trial',
-        href: '/',
-      },
-      hasRibbon: false,
-    },
+    // {
+    //   title: 'standard',
+    //   value: 69,
+    //   period: 'per month',
+    //   texts: ['Proin vel laoreet', 'Ut efficitur egestas', 'Pellentesque ut nibh', 'Donec fringilla sem'],
+    //   callToAction: {
+    //     text: 'Free 15-day trial',
+    //     href: '/',
+    //   },
+    //   hasRibbon: true,
+    //   ribbonTitle: 'Popular',
+    // },
+    // {
+    //   title: 'premium',
+    //   value: 199,
+    //   period: 'per month',
+    //   texts: [
+    //     'Curabitur suscipit risus',
+    //     'Aliquam blandit malesuada',
+    //     'Suspendisse sit amet',
+    //     'Suspendisse auctor dui',
+    //   ],
+    //   callToAction: {
+    //     text: 'Free 30-day trial',
+    //     href: '/',
+    //   },
+    //   hasRibbon: false,
+    // },
   ],
 };
 

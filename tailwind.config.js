@@ -114,27 +114,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        // 'blue': {
-        //   '50': '#E1F2FD',
-        //   '100': '#B3D8FA',
-        //   '200': '#85BDF7',
-        //   '300': '#57A2F4',
-        //   '400': '#2988F1',
-        //   '500': '#2196F3', // Your provided color
-        //   '600': '#1A83D4',
-        //   '700': '#146FB5',
-        //   '800': '#0E5B96',
-        //   '900': '#084777',
-        //   '950': '#023358'
-        // },
         primary: colors.yellow,
         secondary: colors.green,
-        // 'red': '#FF5252',
-        // 'purple': '#B39DDB',
-        // 'pink': '#FF80AB',
-        // 'orange': '#ff7849',
-        // 'green': '#A5D6A7',
-        // 'yellow': '#FFEB3B',
       },
       fontFamily: {
         sans: ['var(--font-custom)', ...defaultTheme.fontFamily.sans],
