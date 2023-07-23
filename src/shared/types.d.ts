@@ -14,7 +14,7 @@ interface HeaderWidgetProps {
 }
 
 interface CallToAction {
-  text: string;
+  text: string | ReactElement;
   href: string;
   icon?: Function;
   targetBlank?: boolean;
@@ -108,7 +108,7 @@ interface Testimonial {
 }
 
 interface Link {
-  label?: string;
+  label?: string | ReactElement;
   href?: string;
   ariaLabel?: string;
   icon?: Function;
@@ -211,6 +211,7 @@ interface AnnouncementProps {
   title: string;
   callToAction?: CallToAction;
   callToAction2?: CallToAction;
+  enable: Boolean;
 }
 
 interface TestimonialProps {
@@ -237,6 +238,13 @@ interface SocialProofProps {
 }
 
 interface ContactProps {
+  header?: Header;
+  content?: string;
+  items: Array<Item>;
+  form: FormProps;
+}
+
+interface SubscribeProps {
   header?: Header;
   content?: string;
   items: Array<Item>;
@@ -270,4 +278,13 @@ interface ToggleMenuProps {
 interface WindowSize {
   width: number;
   height: number;
+}
+
+interface MobileStoreButtonProps {
+  store: 'ios' | 'android';
+  url: string;
+  height?: number;
+  width?: number;
+  linkStyles?: object;
+  linkProps?: object;
 }

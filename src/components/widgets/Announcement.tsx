@@ -2,7 +2,11 @@
 import { announcementData } from '~/shared/data';
 
 const Announcement = () => {
-  const { title, callToAction, callToAction2 } = announcementData;
+  const { title, callToAction, callToAction2, enable } = announcementData;
+
+  if (!enable) {
+    return <></>;
+  }
 
   return (
     <div className="hidden overflow-hidden text-ellipsis whitespace-nowrap border-b border-blue-900 bg-blue-900 px-3 py-2 text-sm text-gray-200 md:block">
