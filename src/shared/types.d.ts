@@ -32,7 +32,7 @@ interface Input {
   type: string;
   label?: string;
   value?: string;
-  name?: string;
+  name: string;
   autocomplete?: string;
   placeholder?: string;
 }
@@ -67,13 +67,13 @@ interface SmallForm {
 
 interface FormProps {
   title?: string;
-  onSubmit: SubmitHandler<FieldValue>;
+  // onSubmit: SubmitHandler<FieldValue<T>>;
   description?: string;
-  inputs: Array<Input>;
+  inputs?: Array<Input>;
   radioBtns?: RadioBtn;
   textarea?: Textarea;
   checkboxes?: Array<Checkbox>;
-  btn: Button;
+  btn?: Button;
   btnPosition?: 'center' | 'right' | 'left';
 }
 
@@ -255,15 +255,14 @@ interface ContactProps {
   header?: Header;
   content?: string;
   items: Array<Item>;
-  form: FormProps;
+  form: Form2Props;
 }
 
 interface SubscribeProps {
   header?: Header;
-  action?: string;
   content?: string;
   items: Array<Item>;
-  form: FormProps;
+  form: Partial<FormProps>;
 }
 
 interface FooterProps {

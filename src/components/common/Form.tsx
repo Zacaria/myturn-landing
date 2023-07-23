@@ -1,10 +1,10 @@
 'use client';
 
 import { useEffect } from 'react';
-import { useForm } from 'react-hook-form';
+import { FieldValue, FieldValues, Path, SubmitHandler, useForm } from 'react-hook-form';
 import { FormProps } from '../../shared/types';
 
-const Form = ({
+const Form = function <T extends FieldValues>({
   title,
   onSubmit,
   description,
@@ -14,18 +14,22 @@ const Form = ({
   checkboxes,
   btn,
   btnPosition,
-}: FormProps) => {
+}: FormProps & { onSubmit: SubmitHandler<T> }) {
   const {
     register,
     handleSubmit,
     formState: { isSubmitSuccessful },
     reset,
-  } = useForm();
+  } = useForm<T>();
   // const [data, setData] = useState('');
 
   useEffect(() => {
     reset();
   }, [isSubmitSuccessful]);
+
+  if (!inputs) {
+    return null;
+  }
 
   return (
     <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
@@ -44,7 +48,7 @@ const Form = ({
                   type={type}
                   id={name}
                   autoComplete={autocomplete}
-                  {...register(name || `${type}-${index}`)}
+                  {...register(name as Path<T>)}
                   placeholder={placeholder}
                   className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                 />
@@ -62,7 +66,7 @@ const Form = ({
                       type="radio"
                       // name={label}
                       value={`value${index}`}
-                      {...register(label || `radio-${index}`)}
+                      {...register(label as Path<T>)}
                       // checked={radioBtnValue === `value${index}`}
                       // onChange={changeRadioBtnsHandler}
                       className="cursor-pointer"
@@ -83,7 +87,7 @@ const Form = ({
                 id={textarea.name}
                 cols={textarea.cols}
                 rows={textarea.rows}
-                {...register(textarea.name)}
+                {...register(textarea.name as Path<T>)}
                 // value={textareaValues}
                 // onChange={(e) => changeTextareaHandler(e)}
                 placeholder={textarea.placeholder}
@@ -99,7 +103,7 @@ const Form = ({
                   <input
                     type="checkbox"
                     // name={label}
-                    {...register(label || `checkbox-${index}`)}
+                    {...register(label as Path<T>)}
                     // checked={checkedState[index]}
                     // onChange={() => changeCheckboxHandler(index)}
                     className="cursor-pointer"
@@ -110,13 +114,17 @@ const Form = ({
             </div>
           )}
         </div>
-        <div
-          className={`${btnPosition === 'left' ? 'text-left' : btnPosition === 'right' ? 'text-right' : 'text-center'}`}
-        >
-          <button type={btn.type} className="btn btn-primary sm:mb-0">
-            {btn.title}
-          </button>
-        </div>
+        {btn && (
+          <div
+            className={`${
+              btnPosition === 'left' ? 'text-left' : btnPosition === 'right' ? 'text-right' : 'text-center'
+            }`}
+          >
+            <button type={btn.type} className="btn btn-primary sm:mb-0">
+              {btn.title}
+            </button>
+          </div>
+        )}
       </form>
     </div>
   );

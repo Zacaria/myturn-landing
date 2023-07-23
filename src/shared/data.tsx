@@ -1264,7 +1264,6 @@ export const subscribeData: SubscribeProps = {
   ],
   form: {
     title: 'Ready to Get Started?',
-    action: '/api/subscribe',
     description:
       'Mauris consequat, urna vel varius auctor, enim risus ornare felis, at hendrerit erat justo eu justo. Curabitur sagittis efficitur aliquam. Duis eget porttitor lectus, vel pharetra ex. Nam volutpat nibh ut porta egestas.',
     inputs: [
