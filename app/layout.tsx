@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 
 import { SITE } from '~/config.js';
 
+import { Toaster } from 'react-hot-toast';
 import Providers from '~/components/atoms/Providers';
 import Header from '~/components/widgets/Header';
 import Announcement from '~/components/widgets/Announcement';
@@ -32,6 +33,8 @@ export default function RootLayout({ children }: LayoutProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className="bg-white tracking-tight text-gray-900 antialiased dark:bg-slate-900 dark:text-slate-300">
+        <Toaster position="bottom-center" />
+
         <Providers>
           <Announcement />
           <Header />

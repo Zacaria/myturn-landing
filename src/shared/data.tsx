@@ -22,6 +22,7 @@ import {
   IconPhoneCall,
   IconRocket,
   IconRss,
+  IconPencil,
 } from '@tabler/icons-react';
 import {
   AnnouncementProps,
@@ -153,9 +154,9 @@ export const heroData: HeroProps = {
   ),
   callToAction: {
     text: 'Subscribe',
-    href: 'https://github.com/onwidget/tailnext',
-    icon: IconDownload,
-    targetBlank: true,
+    href: '/subscribe',
+    icon: IconPencil,
+    // targetBlank: true,
     btnType: 'primary',
   },
   callToAction2: {

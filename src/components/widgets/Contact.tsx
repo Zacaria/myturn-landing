@@ -1,5 +1,5 @@
 import { contactData } from '~/shared/data';
-import Form from '../common/Form';
+import Form from '../common/Form2';
 import HeaderWidget from '../common/HeaderWidget';
 
 const Contact = () => {

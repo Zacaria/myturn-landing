@@ -1,5 +1,6 @@
 import { StaticImageData } from 'next/image';
 import { ReactElement } from 'react';
+import { FieldValue, SubmitHandler } from 'react-hook-form';
 
 interface Header {
   title?: string | ReactElement;
@@ -66,7 +67,18 @@ interface SmallForm {
 
 interface FormProps {
   title?: string;
-  action?: string;
+  onSubmit: SubmitHandler<FieldValue>;
+  description?: string;
+  inputs: Array<Input>;
+  radioBtns?: RadioBtn;
+  textarea?: Textarea;
+  checkboxes?: Array<Checkbox>;
+  btn: Button;
+  btnPosition?: 'center' | 'right' | 'left';
+}
+
+interface Form2Props {
+  title?: string;
   description?: string;
   inputs: Array<Input>;
   radioBtns?: RadioBtn;

@@ -1,12 +1,11 @@
 'use client';
 
-import { useEffect } from 'react';
-import { useForm } from 'react-hook-form';
-import { FormProps } from '../../shared/types';
+import { useState } from 'react';
+import { Form2Props } from '../../shared/types';
 
 const Form = ({
   title,
-  onSubmit,
+  action,
   description,
   inputs,
   radioBtns,
@@ -14,24 +13,48 @@ const Form = ({
   checkboxes,
   btn,
   btnPosition,
-}: FormProps) => {
-  const {
-    register,
-    handleSubmit,
-    formState: { isSubmitSuccessful },
-    reset,
-  } = useForm();
-  // const [data, setData] = useState('');
+}: Form2Props) => {
+  const [inputValues, setInputValues] = useState([]);
+  const [radioBtnValue, setRadioBtnValue] = useState('');
+  const [textareaValues, setTextareaValues] = useState('');
+  const [checkedState, setCheckedState] = useState<boolean[]>(new Array(checkboxes && checkboxes.length).fill(false));
 
-  useEffect(() => {
-    reset();
-  }, [isSubmitSuccessful]);
+  // Update the value of the entry fields
+  const changeInputValueHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+
+    setInputValues({
+      ...inputValues,
+      [name]: value,
+    });
+  };
+
+  // Update checked radio buttons
+  const changeRadioBtnsHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setRadioBtnValue(event.target.value);
+  };
+
+  // Update the textarea value
+  const changeTextareaHandler = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setTextareaValues(event.target.value);
+  };
+
+  // Update checkbox radio buttons
+  const changeCheckboxHandler = (index: number) => {
+    setCheckedState((prevValues) => {
+      const newValues = [...(prevValues as boolean[])];
+      newValues.map(() => {
+        newValues[index] = !checkedState[index];
+      });
+      return newValues;
+    });
+  };
 
   return (
     <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
       {title && <h2 className={`${description ? 'mb-2' : 'mb-4'} text-2xl font-bold`}>{title}</h2>}
       {description && <p className="mb-4">{description}</p>}
-      <form id="contactForm" onSubmit={handleSubmit(onSubmit)}>
+      <form id="contactForm" action={action}>
         <div className="mb-6">
           {/* Inputs */}
           <div className="mx-0 mb-1 sm:mb-4">
@@ -43,8 +66,10 @@ const Form = ({
                 <input
                   type={type}
                   id={name}
+                  name={name}
                   autoComplete={autocomplete}
-                  {...register(name || `${type}-${index}`)}
+                  value={inputValues[index]}
+                  onChange={changeInputValueHandler}
                   placeholder={placeholder}
                   className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                 />
@@ -60,11 +85,10 @@ const Form = ({
                   <div key={`radio-btn-${index}`} className="mr-4 items-baseline">
                     <input
                       type="radio"
-                      // name={label}
+                      name={label}
                       value={`value${index}`}
-                      {...register(label || `radio-${index}`)}
-                      // checked={radioBtnValue === `value${index}`}
-                      // onChange={changeRadioBtnsHandler}
+                      checked={radioBtnValue === `value${index}`}
+                      onChange={changeRadioBtnsHandler}
                       className="cursor-pointer"
                     />
                     <label className="ml-2">{label}</label>
@@ -81,11 +105,11 @@ const Form = ({
               </label>
               <textarea
                 id={textarea.name}
+                name={textarea.name}
                 cols={textarea.cols}
                 rows={textarea.rows}
-                {...register(textarea.name)}
-                // value={textareaValues}
-                // onChange={(e) => changeTextareaHandler(e)}
+                value={textareaValues}
+                onChange={(e) => changeTextareaHandler(e)}
                 placeholder={textarea.placeholder}
                 className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
               />
@@ -98,10 +122,9 @@ const Form = ({
                 <div key={`checkbox-${index}`} className="mx-0 my-1 flex items-baseline">
                   <input
                     type="checkbox"
-                    // name={label}
-                    {...register(label || `checkbox-${index}`)}
-                    // checked={checkedState[index]}
-                    // onChange={() => changeCheckboxHandler(index)}
+                    name={label}
+                    checked={checkedState[index]}
+                    onChange={() => changeCheckboxHandler(index)}
                     className="cursor-pointer"
                   />
                   <label className="ml-2">{label}</label>
