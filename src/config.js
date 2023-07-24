@@ -1,10 +1,10 @@
 module.exports.SITE = {
-  name: 'TailNext',
+  name: 'MyTurn',
 
-  origin: 'https://tailnext.vercel.app',
+  origin: 'https://myturn.me',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'TailNext — Your website with Next.js + Tailwind CSS',
-  description: 'TailNext is a free and ready to start template to make your website using Next.js and Tailwind CSS.',
+  title: 'MyTurn — Your everyday tool to motivate your children with chores',
+  description: 'MyTurn is a free app to help you motivate your children to do chores.',
 };
