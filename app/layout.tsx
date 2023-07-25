@@ -7,7 +7,6 @@ import Providers from '~/components/atoms/Providers';
 import Header from '~/components/widgets/Header';
 import Announcement from '~/components/widgets/Announcement';
 import Footer2 from '~/components/widgets/Footer2';
-// import CookieConsent from 'react-cookie-consent';
 
 import { Inter as CustomFont } from 'next/font/google';
 import '~/assets/styles/base.css';
