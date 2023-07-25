@@ -149,7 +149,7 @@ export const heroData: HeroProps = {
       <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
         MyTurn
       </span>{' '}
-      helps the parents to motivate children to do the chores
+      helps parents to motivate children to do the chores
     </>
   ),
   callToAction: {
@@ -489,7 +489,7 @@ export const featuresData: FeaturesProps = {
   header: {
     title: (
       <>
-        What you get with <span className="whitespace-nowrap">TailNext</span>
+        What you get with <span className="whitespace-nowrap">MyTurn</span>
       </>
     ),
     subtitle:
@@ -498,7 +498,7 @@ export const featuresData: FeaturesProps = {
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
+      title: 'Tasks management',
       description:
         'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
       icon: IconBrandTailwind,
@@ -508,7 +508,7 @@ export const featuresData: FeaturesProps = {
       },
     },
     {
-      title: 'Ready-to-use Components',
+      title: 'Gamification',
       description:
         'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
       icon: IconComponents,
@@ -518,7 +518,7 @@ export const featuresData: FeaturesProps = {
       },
     },
     {
-      title: 'Best Practices',
+      title: 'Motivation',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
       icon: IconListCheck,
@@ -743,11 +743,11 @@ export const teamData: TeamProps = {
   },
   teams: [
     {
-      name: 'Cindy Belcher',
-      occupation: 'SEO Consultant',
+      name: 'Ivana Gazivoda',
+      occupation: 'Chief Executive Officer',
       image: {
         src: 'https://images.unsplash.com/photo-1637858868799-7f26a0640eb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: 'Cindy Belcher',
+        alt: 'Ivana Gazivoda',
       },
       items: [
         {
@@ -768,11 +768,11 @@ export const teamData: TeamProps = {
       ],
     },
     {
-      name: 'Toby Foster',
-      occupation: 'Marketing Tech',
+      name: 'Milica Matovic',
+      occupation: 'Chief Marketing Officer',
       image: {
         src: 'https://images.unsplash.com/photo-1614583224978-f05ce51ef5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2172&q=80',
-        alt: 'Toby Foster',
+        alt: 'Milica Matovic',
       },
       items: [
         {
@@ -793,11 +793,11 @@ export const teamData: TeamProps = {
       ],
     },
     {
-      name: 'Clark Bourne',
-      occupation: 'Content Manager',
+      name: 'Carley Spence',
+      occupation: 'Chief Product Officer',
       image: {
         src: 'https://images.unsplash.com/photo-1639628735078-ed2f038a193e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
-        alt: 'Clark Bourne',
+        alt: 'Carley Spence',
       },
       items: [
         {
@@ -818,11 +818,36 @@ export const teamData: TeamProps = {
       ],
     },
     {
-      name: 'Bella Chase',
-      occupation: 'UX Designer',
+      name: 'João Adani',
+      occupation: 'Chief Design Officer',
       image: {
         src: 'https://images.unsplash.com/photo-1628260412297-a3377e45006f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
-        alt: 'Bella Chase',
+        alt: 'João Adani',
+      },
+      items: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
+    },
+    {
+      name: 'Zacaria Chtatar',
+      occupation: 'Chief Technical Officer',
+      image: {
+        src: 'https://images.unsplash.com/photo-1628260412297-a3377e45006f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
+        alt: 'Zacaria Chtatar',
       },
       items: [
         {
