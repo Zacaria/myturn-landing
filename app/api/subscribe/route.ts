@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
-import { SubscribeEmailTemplate } from '~/components/emails/SubscribeEmailTemplate';
 import sgMail, { MailDataRequired } from '@sendgrid/mail';
 sgMail.setApiKey(process.env.SENDGRID_API_KEY || '');
 
