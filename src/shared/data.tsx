@@ -54,6 +54,10 @@ import reactLogo from '~/assets/images/react-logo.png';
 import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
 import typescriptLogo from '~/assets/images/typescript-logo.png';
 import MobileStoreButton from '~/components/atoms/MobileStoreButton';
+import CEOImage from '~/assets/images/ivana.jpg';
+import CMOImage from '~/assets/images/milica.jpg';
+import CPOImage from '~/assets/images/carley.jpg';
+import CDOImage from '~/assets/images/joao.png';
 
 // Announcement data
 // export const announcementData = null;
@@ -107,10 +111,10 @@ export const headerData: HeaderProps = {
     //   label: 'Blog',
     //   href: '/blog',
     // },
-    {
-      label: 'Contact',
-      href: '/contact',
-    },
+    // {
+    //   label: 'Contact',
+    //   href: '/contact',
+    // },
     {
       labelElement: <MobileStoreButton store="ios" url={''} linkProps={{ title: 'iOS Store Button' }} />,
       href: '/subscribe',
@@ -746,7 +750,7 @@ export const teamData: TeamProps = {
       name: 'Ivana Gazivoda',
       occupation: 'Chief Executive Officer',
       image: {
-        src: 'https://images.unsplash.com/photo-1637858868799-7f26a0640eb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
+        src: CEOImage,
         alt: 'Ivana Gazivoda',
       },
       items: [
@@ -763,7 +767,7 @@ export const teamData: TeamProps = {
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: '#',
+          href: 'mailto:ivanagazivoda98@gmail.com',
         },
       ],
     },
@@ -771,7 +775,7 @@ export const teamData: TeamProps = {
       name: 'Milica Matovic',
       occupation: 'Chief Marketing Officer',
       image: {
-        src: 'https://images.unsplash.com/photo-1614583224978-f05ce51ef5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2172&q=80',
+        src: CMOImage,
         alt: 'Milica Matovic',
       },
       items: [
@@ -788,7 +792,7 @@ export const teamData: TeamProps = {
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: '#',
+          href: 'mailto:matovicmilica98@gmail.com',
         },
       ],
     },
@@ -796,7 +800,7 @@ export const teamData: TeamProps = {
       name: 'Carley Spence',
       occupation: 'Chief Product Officer',
       image: {
-        src: 'https://images.unsplash.com/photo-1639628735078-ed2f038a193e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
+        src: CPOImage,
         alt: 'Carley Spence',
       },
       items: [
@@ -813,7 +817,7 @@ export const teamData: TeamProps = {
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: '#',
+          href: 'carley.spence@student.sl.on.ca',
         },
       ],
     },
@@ -821,7 +825,7 @@ export const teamData: TeamProps = {
       name: 'João Adani',
       occupation: 'Chief Design Officer',
       image: {
-        src: 'https://images.unsplash.com/photo-1628260412297-a3377e45006f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
+        src: CDOImage,
         alt: 'João Adani',
       },
       items: [
