@@ -58,6 +58,7 @@ import CEOImage from '~/assets/images/ivana.jpg';
 import CMOImage from '~/assets/images/milica.jpg';
 import CPOImage from '~/assets/images/carley.jpg';
 import CDOImage from '~/assets/images/joao.png';
+import CTOImage from '~/assets/images/zacaria.jpg';
 
 // Announcement data
 // export const announcementData = null;
@@ -150,7 +151,7 @@ export const heroData: HeroProps = {
   title: <>It&apos;s MyTurn 🖐️</>,
   subtitle: (
     <>
-      <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
+      <span className="font-semibold decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
         MyTurn
       </span>{' '}
       helps parents to motivate children to do the chores
@@ -706,28 +707,26 @@ export const content2Data: ContentProps = {
 
 // Steps data
 export const stepsData: StepsProps = {
-  title: 'Sed ac magna sit amet risus tristique interdum. hac.',
+  title: 'Streamline your daily chores by involving your whole family',
   items: [
     {
       title: 'Step 1',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
+      description: 'Create or select predefined tasks and set a number of reward points',
       icon: IconArrowDown,
     },
     {
       title: 'Step 2',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+      description: 'Let your family choose on what they want to get involved',
       icon: IconArrowDown,
     },
     {
       title: 'Step 3',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+      description: 'Create involvement with a gamified experience',
       icon: IconArrowDown,
     },
     {
-      title: 'Ready!',
+      title: 'Enjoy!',
+      description: "Build up healthy habits and don't forget to cheer up 😉",
       icon: IconCheck,
     },
   ],
@@ -817,7 +816,7 @@ export const teamData: TeamProps = {
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: 'carley.spence@student.sl.on.ca',
+          href: 'mailto:carley.spence@student.sl.on.ca',
         },
       ],
     },
@@ -850,7 +849,7 @@ export const teamData: TeamProps = {
       name: 'Zacaria Chtatar',
       occupation: 'Chief Technical Officer',
       image: {
-        src: 'https://images.unsplash.com/photo-1628260412297-a3377e45006f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
+        src: CTOImage,
         alt: 'Zacaria Chtatar',
       },
       items: [
@@ -867,7 +866,7 @@ export const teamData: TeamProps = {
         {
           title: 'Contact by email',
           icon: IconMail,
-          href: '#',
+          href: 'mailto:havesomecode@gmail.com',
         },
       ],
     },
@@ -928,22 +927,17 @@ export const pricingData: PricingProps = {
     title: 'One unique price',
     subtitle:
       'Proin eget vestibulum sem, vel ultrices ligula. Vestibulum in eleifend lectus, non mollis odio. Donec nibh ipsum, suscipit non pulvinar quis, lobortis ac lorem.',
-    // highlight: 'Pricing',
+    highlight: 'Pricing',
   },
   prices: [
     {
-      title: 'basic',
-      value: 5,
+      title: 'Early Bird',
+      value: 2.99,
       period: 'per month',
-      texts: [
-        'Organise',
-        'Aenean ac nunc',
-        'Cras scelerisque accumsan libero, et volutpat dolor tristique at',
-        'In hac habitasse',
-      ],
+      texts: ['Share chores', 'Create motivating rewards', '3 weeks free trial'],
       callToAction: {
-        text: 'Free 7-day trial',
-        href: '/',
+        text: 'Become an early bird',
+        href: '#subscribe',
       },
       hasRibbon: false,
     },

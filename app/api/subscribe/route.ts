@@ -1,9 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { Resend } from 'resend';
 import sgMail, { MailDataRequired } from '@sendgrid/mail';
 sgMail.setApiKey(process.env.SENDGRID_API_KEY || '');
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 const sender = process.env.EMAIL_SENDER || '';
 
 export async function POST(req: NextRequest) {

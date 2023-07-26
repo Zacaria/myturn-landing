@@ -40,16 +40,16 @@ export default async function Page({ params: { lang } }: PageProps) {
   return (
     <>
       <Hero data={heroData} />
-      <SocialProof {...socialProofData} />
-      <Features3 {...featuresData} />
-      <Content {...contentData} />
-      <Content {...content2Data} />
+      {/* <SocialProof {...socialProofData} /> */}
+      {/* <Features3 {...featuresData} /> */}
+      {/* <Content {...contentData} /> */}
+      {/* <Content {...content2Data} /> */}
       <Steps />
-      <Testimonial />
-      <FAQs2 {...faqsData2} />
+      {/* <Testimonial /> */}
+      {/* <FAQs2 {...faqsData2} /> */}
       <Pricing {...pricingData} />
       <Team />
-      <Contact />
+      {/* <Contact /> */}
       <CallToAction2 {...callToActionData} />
     </>
   );

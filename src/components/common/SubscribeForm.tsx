@@ -49,6 +49,7 @@ export const SubscribeForm = () => {
         action=""
         className="mx-auto mt-4 flex w-full flex-col gap-3 sm:flex-row sm:gap-0"
         onSubmit={handleSubmit(onSubmit)}
+        id="subscribe"
       >
         <div className="border-primary/10 relative flex w-full items-center rounded-lg rounded-l-lg border bg-white shadow-md dark:border-gray-700 dark:bg-gray-900">
           <div className="py-1 pl-3">
