@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
+import { IconPencil } from '@tabler/icons-react';
 
 type FormData = FieldValues & {
   email: string;
@@ -49,10 +50,6 @@ export const SubscribeForm = () => {
         className="mx-auto mt-4 flex w-full flex-col gap-3 sm:flex-row sm:gap-0"
         onSubmit={handleSubmit(onSubmit)}
       >
-        {/* <form action="" class="mx-auto mt-4 flex w-full max-w-md flex-col gap-3 sm:flex-row sm:gap-0">
-        <input type="email" name="email" id="email" class="grow rounded border-2 border-gray-300 py-3 px-3 focus:border-emerald-500 focus:outline-none sm:rounded-l-md sm:rounded-r-none sm:border-r-0" placeholder="Email Address" />
-        <button type="submit" class="rounded bg-emerald-500 px-5 py-4 font-bold text-white sm:rounded-l-none sm:rounded-r-md">Get First Email</button>
-      </form> */}
         <div className="border-primary/10 relative flex w-full items-center rounded-lg rounded-l-lg border bg-white shadow-md dark:border-gray-700 dark:bg-gray-900">
           <div className="py-1 pl-3">
             <IconMail />
@@ -64,16 +61,14 @@ export const SubscribeForm = () => {
             type="email"
             {...register('email')}
           />
-          {/* <div className="md:pr-1.5 lg:pr-0"> */}
           <button
             type="submit"
             title="Start buying"
-            // className="before:bg-primary dark:before:bg-primaryLight relative ml-auto h-8 w-20 bg-primary-500 before:absolute before:inset-0 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-auto sm:px-6"
-            className="sm:rounded-r-m rounded-r-lg bg-primary-700 px-5 py-4 font-bold sm:rounded-l-none "
+            className="sm:rounded-r-m rounded-r-lg bg-primary-700 px-5 py-5 font-bold sm:rounded-l-none "
           >
             <span className="relative hidden w-max font-semibold text-slate-50 md:block">Try for free</span>
+            <IconPencil className="relative mx-auto h-6 w-6 text-slate-50 dark:text-gray-900 md:hidden" />
           </button>
-          {/* </div> */}
         </div>
       </form>
     </div>
