@@ -168,11 +168,11 @@ interface Dropdown {
 }
 
 interface HeroProps {
-  title?: string | ReactElement;
-  subtitle?: string | ReactElement;
+  title: string | ReactElement;
+  subtitle: string | ReactElement;
   callToAction?: CallToAction;
   callToAction2?: CallToAction;
-  image?: Image;
+  image: Image;
 }
 
 interface FAQsProps {
