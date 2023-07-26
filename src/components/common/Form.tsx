@@ -21,7 +21,6 @@ const Form = function <T extends FieldValues>({
     formState: { isSubmitSuccessful },
     reset,
   } = useForm<T>();
-  // const [data, setData] = useState('');
 
   useEffect(() => {
     reset();

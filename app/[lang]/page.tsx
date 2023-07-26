@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { SITE } from '~/config.js';
 
 import Hero from '~/components/widgets/Hero';
-import SocialProof from '../src/components/widgets/SocialProof';
+import SocialProof from '../../src/components/widgets/SocialProof';
 import Features3 from '~/components/widgets/Features3';
 import Content from '~/components/widgets/Content';
 import Steps from '~/components/widgets/Steps';
@@ -23,12 +23,20 @@ import {
   socialProofData,
 } from '~/shared/data';
 import Contact from '~/components/widgets/Contact';
+// import { getDictionary } from './dictionaries';
 
 export const metadata: Metadata = {
   title: SITE.title,
 };
 
-export default function Page() {
+type PageProps = {
+  params: {
+    lang: string;
+  };
+};
+
+export default async function Page({ params: { lang } }: PageProps) {
+  // const dict = await getDictionary(lang);
   return (
     <>
       <Hero data={heroData} />
