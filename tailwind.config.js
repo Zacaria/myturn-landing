@@ -23,18 +23,18 @@ module.exports = {
         '950': '#023358'
       },
       green: {
-        '50': '#EDF8ED',
-        '100': '#DAF4DA',
-        '200': '#C7EFC7',
-        '300': '#B4EBB4',
-        '400': '#A1E6A1',
-        '500': '#A5D6A7', // Your provided color
-        '600': '#8AC68A',
-        '700': '#6FB76F',
-        '800': '#55A855',
-        '900': '#3B9A3B',
-        '950': '#208B20'
-      },
+        '50': '#DCECDB',
+        '100': '#C9E4C7',
+        '200': '#B6DDB3',
+        '300': '#A3D5A0',
+        '400': '#90CE8C',
+        '500': '#679D60', // Your provided color
+        '600': '#568256',
+        '700': '#45674D',
+        '800': '#344B43',
+        '900': '#22303A',
+        '950': '#111530'
+      },      
       yellow: {
         '50': '#FFFCE5',
         '100': '#FFF9CC',
@@ -115,8 +115,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: colors.yellow,
-        secondary: colors.green,
+        primary: colors.green,
       },
       fontFamily: {
         sans: ['var(--font-custom)', ...defaultTheme.fontFamily.sans],
