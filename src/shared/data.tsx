@@ -23,6 +23,8 @@ import {
   IconRocket,
   IconRss,
   IconPencil,
+  IconDeviceGamepad2,
+  IconConfetti,
 } from '@tabler/icons-react';
 import {
   AnnouncementProps,
@@ -545,7 +547,7 @@ export const featuresData: FeaturesProps = {
       title: 'Delegate Chores Effortlessly in Just 5 Minutes!',
       description:
         "Our list of predefined tasks streamlines chore delegation. Spend just 5 minutes assigning tasks, setting deadlines, and let our AI learn your kids' habits, ensuring timely notifications to keep chores on track.",
-      icon: IconBrandTailwind,
+      icon: IconListCheck,
       // link: {
       //   label: 'Discover now',
       //   href: '/',
@@ -555,7 +557,7 @@ export const featuresData: FeaturesProps = {
       title: 'Motivation Made Simple with Reward System!',
       description:
         "Unlock your children's enthusiasm for chores with our rewarding system. Even small incentives, like letting them choose a movie to watch, can ignite their motivation and turn household tasks into enjoyable experiences",
-      icon: IconComponents,
+      icon: IconRocket,
       // link: {
       //   label: 'Discover now',
       //   href: '/',
@@ -565,7 +567,7 @@ export const featuresData: FeaturesProps = {
       title: 'Turn Chores into Fun Adventures with Gamification!',
       description:
         'Spark excitement with a points-based system! As your kids complete tasks, they earn stars and climb the leaderboard, transforming mundane chores into engaging games and making every achievement a thrilling accomplishment.',
-      icon: IconListCheck,
+      icon: IconDeviceGamepad2,
       // link: {
       //   label: 'Discover now',
       //   href: '/',
@@ -575,7 +577,7 @@ export const featuresData: FeaturesProps = {
       title: 'Celebrate Little Heroes: Validate and Praise!',
       description:
         'After each task, kids share photos of their accomplishments. Take the parent role and validate their efforts or offer encouraging feedback. Shower them with praise and acknowledgment for becoming household heroes!',
-      icon: IconRocket,
+      icon: IconConfetti,
       // link: {
       //   label: 'Discover now',
       //   href: '/',
@@ -915,7 +917,7 @@ export const teamData: TeamProps = {
 // Testimonial data
 export const testimonialData: TestimonialProps = {
   header: {
-    title: 'What they say about us',
+    title: 'What customers say about us',
     // subtitle:
     // 'Etiam sed odio et dolor auctor gravida. Curabitur tincidunt elit non risus pharetra sodales. Etiam sit amet mattis massa.',
     // highlight: 'Testimonial',
@@ -937,7 +939,7 @@ export const testimonialData: TestimonialProps = {
       name: 'Ana',
       occupation: 'Working mom with 2 boys',
       comment:
-        'As a busy working mom, I struggled to motivate my kids to help with household activities. Thankfully, I foundrerit at elementum non, varius a nibh. Ut eget convallis mi. Morbi mattis, felis sit amet consectetur scelerisque, odio purus ornare sapien, in feugiat lorem tellus et magna. Pellentesque luctus dolor in ornare mattis.',
+        'As a busy working mom, I struggled to motivate my kids to help with household activities. Thankfully, I found a game-changing story about MyTurn app. I hope that it will make chores fun and engaging for kids, bringing joy and teamwork back into our daily routines!',
       image: {
         src: TestimonialImage2,
         alt: 'profile picture of ana',

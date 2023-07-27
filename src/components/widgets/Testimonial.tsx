@@ -7,7 +7,7 @@ const Testimonial = () => {
   const { header, testimonials } = testimonialData;
 
   return (
-    <section className="bg-primary-50 " id="testimonial">
+    <section className="" id="testimonial">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         {header && <HeaderWidget header={header} titleClassname="text-2xl sm:text-3xl" />}
         <div className="flex items-stretch justify-center">
@@ -40,7 +40,7 @@ const Testimonial = () => {
                         <span className="">{occupation}</span>
                       </div>
                     </div>
-                    {comment && <p className="m-b-30 font-light ">{`"${comment.slice(0, 150)}..."`}</p>}
+                    {comment && <p className="m-b-30 font-light ">{comment}</p>}
                     {href && Icon && <Icon className="mx-auto mt-4 h-6 w-6 text-primary-600 " />}
                   </a>
                 </div>

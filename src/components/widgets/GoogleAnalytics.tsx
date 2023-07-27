@@ -6,8 +6,6 @@ import { hasCookie, setCookie, getCookie } from 'cookies-next';
 const GoogleAnalytics = () => {
   const hasConsent = getCookie('localConsent');
 
-  console.log('consetnt', hasConsent);
-
   if (hasConsent === false) {
     return null;
   }

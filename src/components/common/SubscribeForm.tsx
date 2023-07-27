@@ -58,7 +58,7 @@ export const SubscribeForm = ({ btn, inputs }: FormProps) => {
         onSubmit={handleSubmit(onSubmit)}
         id="subscribe"
       >
-        <div className="border-primary/10 relative flex w-full items-center rounded-lg rounded-l-lg border bg-white shadow-md  ">
+        <div className="border-primary/10 relative flex w-full items-center rounded-lg rounded-l-lg bg-white shadow-md  ">
           <div className="py-1 pl-3">
             <IconMail />
           </div>
