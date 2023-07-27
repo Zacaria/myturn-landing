@@ -65,7 +65,7 @@ export const SubscribeForm = ({ btn, inputs }: FormProps) => {
           <input
             autoComplete="email"
             placeholder={input.placeholder}
-            className="w-full bg-transparent p-2 placeholder-gray-600 "
+            className="w-full bg-transparent p-2 placeholder-gray-600 focus:outline-none"
             type="email"
             required
             {...register('email')}

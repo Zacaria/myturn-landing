@@ -5,7 +5,8 @@ const Footer2 = () => {
   const { links, columns, socials, footNote } = footerData2;
 
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6">
+    <div className="mx-auto mt-8 max-w-7xl px-4 sm:px-4">
+      <hr className="my-3 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
       <div className="xs:gap-8 grid grid-cols-4 gap-4 gap-y-8 py-8 md:py-12">
         {columns.map(({ title, texts, links: colLinks }, index) => (
           <div
