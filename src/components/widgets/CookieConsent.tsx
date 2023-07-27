@@ -20,27 +20,36 @@ const CookieConsent = () => {
     setCookie('localConsent', 'false', {});
   };
 
+  useEffect(() => {
+    window.addEventListener('scroll', acceptCookie);
+
+    // unmount
+    return () => {
+      window.removeEventListener('scroll', acceptCookie);
+    };
+  }, []);
+
   if (showConsent) {
     return null;
   }
 
   return (
-    <div className="fixed inset-0 bg-slate-700 bg-opacity-70">
-      <div className="fixed bottom-0 left-0 right-0 flex items-center justify-between bg-gray-100 px-4 py-8">
-        <span className="text-dark mr-16 text-base">
+    <div className="fixed inset-0">
+      <div className="fixed bottom-2 left-2 right-2 mx-2 flex flex-col justify-center bg-gray-100 px-4 py-8 align-middle md:flex-row md:items-center md:justify-between">
+        <div className="text-dark mr-16 text-sm md:text-base">
           This website uses cookies to improve user experience. By using our website you consent to all cookies in
           accordance with our{' '}
           <Link href="/cookie-policy" className="hover:text-lightAccent underline">
             cookie policy
           </Link>
           .
-        </span>
-        <button className="rounded bg-green-700 px-8 py-2 text-white" onClick={() => acceptCookie()}>
+        </div>
+        <button className="my-2 rounded bg-green-700 px-8 py-2 text-white md:my-0" onClick={acceptCookie}>
           Accept
         </button>
         <button
-          className="bg-white-400 ml-4 rounded border-2 border-slate-600 px-8 py-2 text-slate-800"
-          onClick={() => denyCookie()}
+          className="bg-white-400 rounded border-2 border-slate-600 px-8 py-2 text-slate-800 md:ml-4"
+          onClick={denyCookie}
         >
           Decline
         </button>
