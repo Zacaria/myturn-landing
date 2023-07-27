@@ -11,7 +11,7 @@ const Team = () => {
         {header && <HeaderWidget header={header} titleClassname="text-2xl sm:text-3xl" />}
         <div className="flex items-stretch justify-center">
           <div className="grid grid-cols-1 gap-4  sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5">
-            {teams.map(({ name, occupation, image, items }, index) => (
+            {teams.map(({ name, occupation, image, items, line }, index) => (
               <div key={`item-team-${index}`} className="p-2">
                 <Image
                   src={image.src}
@@ -22,7 +22,8 @@ const Team = () => {
                 />
                 <div className="relative mt-3 text-center">
                   <h3 className="mb-1.5 text-xl font-bold">{name}</h3>
-                  <p className="mb-7 text-base font-medium capitalize text-gray-600 ">{occupation}</p>
+                  <p className="mb-3 text-base font-medium capitalize text-gray-600 ">{occupation}</p>
+                  <p className="mb-7 font-light text-gray-500 ">{line}</p>
                   <ul className="absolute right-[-10px] top-[-290px] block list-none rounded-md bg-white/70 shadow-[0_0_8px_rgba(0,0,0,0.2)] backdrop-blur-sm ">
                     {items &&
                       items.map(

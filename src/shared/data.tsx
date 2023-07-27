@@ -789,6 +789,7 @@ export const teamData: TeamProps = {
     {
       name: 'Ivana Gazivoda',
       occupation: 'Chief Executive Officer',
+      line: 'Possess the superpower to efficiently herd cats and turn chaos into success.',
       image: {
         src: CEOImage,
         alt: 'Ivana Gazivoda',
@@ -814,6 +815,7 @@ export const teamData: TeamProps = {
     {
       name: 'Milica Matovic',
       occupation: 'Chief Marketing Officer',
+      line: 'Tech-savvy wizard who can magically make our brand’s online presence extraordinary.',
       image: {
         src: CMOImage,
         alt: 'Milica Matovic',
@@ -839,6 +841,7 @@ export const teamData: TeamProps = {
     {
       name: 'Carley Spence',
       occupation: 'Chief Product Officer',
+      line: 'Jedi mind trick expert who can design an app that keeps both parents and kids happily glued while ensuring everyone’s sanity stays intact!',
       image: {
         src: CPOImage,
         alt: 'Carley Spence',
@@ -864,6 +867,7 @@ export const teamData: TeamProps = {
     {
       name: 'João Adani',
       occupation: 'Chief Design Officer',
+      line: 'Adds a splash of colorful imagination to the company’s canvas, turning innovative ideas into stunning masterpieces.',
       image: {
         src: CDOImage,
         alt: 'João Adani',
@@ -889,6 +893,7 @@ export const teamData: TeamProps = {
     {
       name: 'Zacaria Chtatar',
       occupation: 'Chief Technical Officer',
+      line: 'Coding ninja who not only builds exceptional tech but also stealthily ensures that bugs meet their demise!',
       image: {
         src: CTOImage,
         alt: 'Zacaria Chtatar',

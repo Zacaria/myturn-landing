@@ -109,6 +109,7 @@ interface Team {
   occupation: string;
   image: Image;
   items?: Array<Item>;
+  line?: string;
 }
 
 interface Testimonial {
