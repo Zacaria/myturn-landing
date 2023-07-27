@@ -12,7 +12,7 @@ export async function POST(req: NextRequest) {
       to: email,
       from: sender,
       subject: 'Sending with SendGrid is Fun',
-      templateId: 'd-e5cf25d1d8564d0f8c2df9cc8d6ad2af',
+      templateId: process.env.EMAIL_TEMPLATE_ID,
       personalizations: [
         {
           to: [{ email }],
