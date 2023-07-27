@@ -45,9 +45,9 @@ export default async function Page({ params: { lang } }: PageProps) {
       {/* <Content {...contentData} /> */}
       {/* <Content {...content2Data} /> */}
       {/* <Steps /> */}
-      {/* <Testimonial /> */}
+      <Testimonial />
       {/* <FAQs2 {...faqsData2} /> */}
-      <Pricing {...pricingData} />
+      {/* <Pricing {...pricingData} /> */}
       <Team />
       {/* <Contact /> */}
       <CallToAction2 {...callToActionData} />

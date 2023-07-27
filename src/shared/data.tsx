@@ -148,7 +148,12 @@ export const headerData: HeaderProps = {
 
 // Hero data
 export const heroData: HeroProps = {
-  title: 'More fun for kids, less chores for you. ',
+  title: (
+    <span>
+      More <span className="text-yellow-800">fun</span> for kids, less <span className="text-primary-700">chores</span>{' '}
+      for you.
+    </span>
+  ),
   subtitle: (
     <>
       <span className="font-semibold">MyTurn</span> is a time-effective and kids-engaging way of assigning chores. It is
@@ -776,21 +781,21 @@ export const teamData: TeamProps = {
         alt: 'Ivana Gazivoda',
       },
       items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
+        // {
+        //   title: 'Know more on Twitter',
+        //   icon: IconBrandTwitter,
+        //   href: '#',
+        // },
         {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/ivana-gazivoda/',
         },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: 'mailto:ivanagazivoda98@gmail.com',
-        },
+        // {
+        //   title: 'Contact by email',
+        //   icon: IconMail,
+        //   href: 'mailto:ivanagazivoda98@gmail.com',
+        // },
       ],
     },
     {
@@ -801,21 +806,21 @@ export const teamData: TeamProps = {
         alt: 'Milica Matovic',
       },
       items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
+        // {
+        //   title: 'Know more on Twitter',
+        //   icon: IconBrandTwitter,
+        //   href: '#',
+        // },
         {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/milica-matovic/',
         },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: 'mailto:matovicmilica98@gmail.com',
-        },
+        // {
+        //   title: 'Contact by email',
+        //   icon: IconMail,
+        //   href: 'mailto:matovicmilica98@gmail.com',
+        // },
       ],
     },
     {
@@ -826,21 +831,21 @@ export const teamData: TeamProps = {
         alt: 'Carley Spence',
       },
       items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
+        // {
+        //   title: 'Know more on Twitter',
+        //   icon: IconBrandTwitter,
+        //   href: '#',
+        // },
         {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/carley-spence/',
         },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: 'mailto:carley.spence@student.sl.on.ca',
-        },
+        // {
+        //   title: 'Contact by email',
+        //   icon: IconMail,
+        //   href: 'mailto:carley.spence@student.sl.on.ca',
+        // },
       ],
     },
     {
@@ -851,21 +856,21 @@ export const teamData: TeamProps = {
         alt: 'João Adani',
       },
       items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
+        // {
+        //   title: 'Know more on Twitter',
+        //   icon: IconBrandTwitter,
+        //   href: '#',
+        // },
         {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/joão-adani-7866b2255/',
         },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
+        // {
+        //   title: 'Contact by email',
+        //   icon: IconMail,
+        //   href: '#',
+        // },
       ],
     },
     {
@@ -876,21 +881,21 @@ export const teamData: TeamProps = {
         alt: 'Zacaria Chtatar',
       },
       items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
+        // {
+        //   title: 'Know more on Twitter',
+        //   icon: IconBrandTwitter,
+        //   href: '#',
+        // },
         {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/zacariachtatar/',
         },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: 'mailto:havesomecode@gmail.com',
-        },
+        // {
+        //   title: 'Contact by email',
+        //   icon: IconMail,
+        //   href: 'mailto:havesomecode@gmail.com',
+        // },
       ],
     },
   ],
@@ -1558,9 +1563,13 @@ export const footerData2: FooterProps = {
     },
   ],
   socials: [
-    { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
-    { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
-    { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
+    // { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
+    {
+      label: 'Instagram',
+      icon: IconBrandInstagram,
+      href: 'https://instagram.com/myturn.me?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D',
+    },
+    { label: 'Facebook', icon: IconBrandFacebook, href: 'https://www.facebook.com/myturn.me?mibextid=ZbWKwL' },
     // { label: 'RSS', icon: IconRss, href: '#' },
     // { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/tailnext' },
   ],

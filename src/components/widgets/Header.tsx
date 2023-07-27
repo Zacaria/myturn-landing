@@ -50,7 +50,7 @@ const Header = () => {
 
   return (
     <header
-      className={`top-0 z-40 mx-auto w-full flex-none bg-white transition-all duration-100 ease-in  md:bg-white/90 md:backdrop-blur-sm  ${
+      className={`top-0 z-40 mx-auto w-full flex-none bg-[#f5ece4] transition-all duration-100 ease-in  md:bg-[#f5ece4]/90 md:backdrop-blur-sm  ${
         isSticky ? 'sticky' : 'relative'
       }`}
       id="header"
@@ -91,7 +91,7 @@ const Header = () => {
                       <ul
                         className={`${
                           isDropdownOpen[index] ? 'block' : 'md:hidden'
-                        } rounded pl-4 font-medium drop-shadow-xl md:absolute md:min-w-[200px] md:bg-white/90 md:pl-0 md:backdrop-blur-md `}
+                        } rounded pl-4 font-medium drop-shadow-xl md:absolute md:min-w-[200px] md:bg-[#f5ece4]/90 md:pl-0 md:backdrop-blur-md `}
                       >
                         {links.map(({ label: label2, labelElement: labelElement2, href: href2 }, index2) => (
                           <li key={`item-link-${index2}`}>

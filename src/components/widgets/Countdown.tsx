@@ -63,10 +63,11 @@ const Timer1 = () => {
   }, [startCountDown]);
   return (
     <div>
-      <p className="my-6">
-        <span className="font-semibold">You want to be an early app adopter ?</span> The first 100 subscribers will get
-        a free subscription! Offer valid until August 5th
-      </p>
+      {/* <p className="my-6">
+        First 100 early birds get <span className="font-semibold">lifetime free access</span>. Valid until August 5th
+        2023.
+        <span className="text-yellow-600">Sign up now !</span>
+      </p> */}
       <div className="flex items-center justify-center gap-2">
         <div className="flex flex-col gap-1 ">
           <div className="flex gap-1">

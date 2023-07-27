@@ -78,12 +78,17 @@ const Hero = (props: { data: HeroProps }) => {
       ></div>
       <div className="relative lg:flex lg:items-center lg:gap-12">
         <div className="text-center sm:mx-auto sm:w-10/12 md:mt-12 md:w-2/3 lg:mr-auto lg:mt-0 lg:w-6/12 lg:text-left">
-          <h1 className="text-4xl font-bold text-gray-900  md:text-3xl lg:text-4xl xl:text-4xl">{title}</h1>
+          <h1 className="text-4xl font-bold text-gray-900 md:text-3xl lg:text-4xl xl:text-5xl">{title}</h1>
           <p className="my-8 text-gray-600 ">{subtitle}</p>
-          <Countdown />
+          <p className="my-12">
+            First 100 early birds get <span className="font-semibold">lifetime free access</span>. Valid until August
+            5th 2023. <span className="font-bold text-yellow-800">Sign up now !</span>
+          </p>
+          {/* <Countdown /> */}
+          <div className="mt-12"></div>
           <SubscribeForm {...form} />
-          <div className="mt-12 flex justify-between gap-6 lg:gap-12">
-            <HeroTestimonial />
+          <div className="flex justify-between gap-6 lg:gap-12">
+            {/* <HeroTestimonial /> */}
             {/* <Image
               src="./images/clients/airbnb.svg"
               className="h-8 sm:h-10 w-auto lg:h-12"
