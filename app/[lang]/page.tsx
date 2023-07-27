@@ -44,7 +44,7 @@ export default async function Page({ params: { lang } }: PageProps) {
       <Features3 {...featuresData} />
       {/* <Content {...contentData} /> */}
       {/* <Content {...content2Data} /> */}
-      <Steps />
+      {/* <Steps /> */}
       {/* <Testimonial /> */}
       {/* <FAQs2 {...faqsData2} /> */}
       <Pricing {...pricingData} />
