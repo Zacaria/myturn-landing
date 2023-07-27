@@ -67,6 +67,7 @@ export const SubscribeForm = ({ btn, inputs }: FormProps) => {
             placeholder={input.placeholder}
             className="w-full bg-transparent p-2 placeholder-gray-600 "
             type="email"
+            required
             {...register('email')}
           />
           <button

@@ -71,7 +71,7 @@ const Hero = (props: { data: HeroProps }) => {
   // );
 
   return (
-    <div className="m-auto px-6 pt-32 xl:container md:px-12 md:py-12">
+    <div className="m-auto px-6 pt-2 xl:container md:px-12 md:py-2">
       <div
         aria-hidden="true"
         className="from-primaryLight to-secondaryLight absolute inset-0 my-auto h-32 w-96 rotate-45 bg-gradient-to-r opacity-50 blur-3xl "
