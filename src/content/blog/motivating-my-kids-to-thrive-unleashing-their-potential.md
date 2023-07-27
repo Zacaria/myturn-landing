@@ -3,7 +3,7 @@ publishDate: 'Jul 26 2023'
 title: 'Motivating My Kids to Thrive: Unleashing their Potential'
 description: 'Discover effective strategies for motivating kids to engage in chores and how the MyTurn app transforms tasks into rewarding experiences'
 excerpt: 'Explore the strategies for inspiring your children to take part in household chores, from setting clear expectations to making tasks fun and rewarding. Learn how the MyTurn app can revolutionize your approach, turning routine chores into an enriching journey of growth and discovery for the entire family.'
-image: 'https://source.unsplash.com/random/1024x640/?vintage+phone'
+image: 'https://img.freepik.com/free-photo/close-up-little-girl-helping-her-mom-with-dishes_23-2149117558.jpg?w=1800&t=st=1690490604~exp=1690491204~hmac=89e31cbf38126c1986c4ff22769ddad1ed9cd40ec29106ab7ae75d348a70aae0'
 tags: [markdown, blog]
 ---
 

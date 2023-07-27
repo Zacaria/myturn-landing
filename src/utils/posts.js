@@ -16,6 +16,8 @@ const load = () => {
       }),
   );
 
+  
+
   return posts;
 };
 
@@ -38,7 +40,9 @@ export const findLatestPosts = async ({ count } = {}) => {
 
 /** */
 export const findPostBySlug = async (slug) => {
-  if (!slug) return null;
+  if (!slug) {
+    return null
+  };
 
   try {
     const readFile = fs.readFileSync(join(BLOG_DIR, `${slug}.md`), 'utf-8');
@@ -48,7 +52,8 @@ export const findPostBySlug = async (slug) => {
       ...frontmatter,
       content,
     };
-  } catch (e) {}
+  } catch (e) {
+  }
 
   return null;
 };

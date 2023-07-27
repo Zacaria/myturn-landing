@@ -60,7 +60,7 @@ import CEOImage from '~/assets/images/ivana.jpg';
 import CMOImage from '~/assets/images/milica.jpg';
 import CPOImage from '~/assets/images/carley.jpg';
 import CDOImage from '~/assets/images/joao.png';
-import CTOImage from '~/assets/images/zacaria.jpg';
+import CTOImage from '~/assets/images/zacaria.png';
 import TestimonialImage1 from '~/assets/images/julija.jpg';
 import TestimonialImage2 from '~/assets/images/ana.png';
 import TestimonialImage3 from '~/assets/images/kelly.png';

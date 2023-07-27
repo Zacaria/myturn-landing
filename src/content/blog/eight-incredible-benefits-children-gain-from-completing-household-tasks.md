@@ -3,7 +3,7 @@ publishDate: 'Jul 27 2023'
 title: '8 Incredible Benefits Children Gain from Completing Household Tasks'
 description: "Explore how chores boost children's skills and independence, and learn how the MyTurn app gamifies tasks for engaging, rewarding experiences."
 excerpt: "Household chores can play a pivotal role in children's development, fostering a sense of responsibility, teaching essential life skills, and building independence. The MyTurn app aims to make these tasks engaging and rewarding, creating a structured routine for children and fostering a strong work ethic. As parents and children collaborate on chores, they strengthen family bonds and enhance communication. By encouraging children to embrace chores, we set them on a path to become responsible, capable, and confident individuals."
-image: 'https://source.unsplash.com/random/1024x640/?vintage+travel'
+image: 'https://img.freepik.com/foto-gratis/vista-lateral-nino-limpiando-mesa_23-2148456951.jpg?w=2000&t=st=1690490894~exp=1690491494~hmac=4a7a0cff993fec105f2b00f61b8504f076bcb7b02a8b282398d8e31d7c96e9a6'
 tags: [markdown, blog]
 ---
 

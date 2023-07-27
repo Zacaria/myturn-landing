@@ -3,7 +3,7 @@ publishDate: 'Jul 28 2023'
 title: 'Unleashing the Power of Rewards: Promoting Positive Behavior in Children'
 description: "Explore the transformative power of rewards in nurturing positive behaviors in children. Understand how the MyTurn app's rewards system fosters intrinsic motivation, cultivates a sense of accomplishment, and instills values such as responsibility and goal-setting, paving the way for a future filled with positive accomplishments."
 excerpt: "In the journey of fostering positive behaviors in children, rewards serve as a powerful tool. The MyTurn app elevates this approach by integrating rewards with autonomy, thus strengthening intrinsic motivation. Kids gain a sense of accomplishment and self-esteem as they choose their tasks, earn rewards, and receive recognition. Through this, they learn about goal-setting and persistence, effectively associating chores with positive experiences. Ultimately, MyTurn's rewards system is a valuable aid in shaping the individuals our children grow to become, fostering a future filled with positive behaviors and achievements."
-image: 'https://source.unsplash.com/random/1024x640/?vintage+camera'
+image: 'https://img.freepik.com/free-photo/little-girl-her-attractive-young-mother-sitting-sofa-with-gift-spending-time-together-home-generation-women-international-women-s-day-happy-mother-s-day_155003-17456.jpg?w=2000&t=st=1690490384~exp=1690490984~hmac=b900e6cf9e398cfc154805ea5b8b75329fe0a5cb5e2cb5e686119bad66e1cce3'
 tags: [markdown, blog]
 ---
 
