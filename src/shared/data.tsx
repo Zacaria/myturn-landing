@@ -116,16 +116,16 @@ export const headerData: HeaderProps = {
     //   label: 'Contact',
     //   href: '/contact',
     // },
-    {
-      labelElement: <MobileStoreButton store="ios" url={''} linkProps={{ title: 'iOS Store Button' }} />,
-      href: '/subscribe',
-    },
-    {
-      labelElement: (
-        <MobileStoreButton store="android" url={'/subscribe'} linkProps={{ title: 'Android Store Button' }} />
-      ),
-      href: '/subscribe',
-    },
+    // {
+    //   labelElement: <MobileStoreButton store="ios" url={''} linkProps={{ title: 'iOS Store Button' }} />,
+    //   href: '/subscribe',
+    // },
+    // {
+    //   labelElement: (
+    //     <MobileStoreButton store="android" url={'/subscribe'} linkProps={{ title: 'Android Store Button' }} />
+    //   ),
+    //   href: '/subscribe',
+    // },
   ],
   actions: [
     // {
@@ -140,7 +140,7 @@ export const headerData: HeaderProps = {
     // btnType: 'primary',
     // },
   ],
-  isSticky: true,
+  isSticky: false,
   showToggleTheme: false,
   showRssFeed: false,
   position: 'right',
@@ -1526,22 +1526,22 @@ export const footerData2: FooterProps = {
       label: 'Privacy Policy',
       href: '/privacy',
     },
-    {
-      labelElement: (
-        <div className="mx-2 inline-block">
-          <MobileStoreButton store="ios" url={''} linkProps={{ title: 'iOS Store Button' }} />
-        </div>
-      ),
-      href: '/subscribe',
-    },
-    {
-      labelElement: (
-        <div className="mx-2 inline-block">
-          <MobileStoreButton store="android" url={'/subscribe'} linkProps={{ title: 'Android Store Button' }} />
-        </div>
-      ),
-      href: '/subscribe',
-    },
+    // {
+    //   labelElement: (
+    //     <div className="mx-2 inline-block">
+    //       <MobileStoreButton store="ios" url={''} linkProps={{ title: 'iOS Store Button' }} />
+    //     </div>
+    //   ),
+    //   href: '/subscribe',
+    // },
+    // {
+    //   labelElement: (
+    //     <div className="mx-2 inline-block">
+    //       <MobileStoreButton store="android" url={'/subscribe'} linkProps={{ title: 'Android Store Button' }} />
+    //     </div>
+    //   ),
+    //   href: '/subscribe',
+    // },
   ],
   columns: [
     // {
