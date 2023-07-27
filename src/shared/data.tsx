@@ -59,6 +59,9 @@ import CMOImage from '~/assets/images/milica.jpg';
 import CPOImage from '~/assets/images/carley.jpg';
 import CDOImage from '~/assets/images/joao.png';
 import CTOImage from '~/assets/images/zacaria.jpg';
+import TestimonialImage1 from '~/assets/images/julija.jpg';
+import TestimonialImage2 from '~/assets/images/ana.png';
+import TestimonialImage3 from '~/assets/images/kelly.png';
 
 // Announcement data
 // export const announcementData = null;
@@ -904,47 +907,47 @@ export const teamData: TeamProps = {
 // Testimonial data
 export const testimonialData: TestimonialProps = {
   header: {
-    title: 'What our customers say about us',
-    subtitle:
-      'Etiam sed odio et dolor auctor gravida. Curabitur tincidunt elit non risus pharetra sodales. Etiam sit amet mattis massa.',
+    title: 'What they say about us',
+    // subtitle:
+    // 'Etiam sed odio et dolor auctor gravida. Curabitur tincidunt elit non risus pharetra sodales. Etiam sit amet mattis massa.',
     // highlight: 'Testimonial',
   },
   testimonials: [
     {
-      name: 'Tayla Kirsten',
-      occupation: 'Marketing Manager',
+      name: 'Julija',
+      occupation: 'Mom of 2 kids and yoga teacher',
       comment:
-        'Suspendisse mollis ante turpis, ut fermentum nulla finibus ac. Integer ut justo id dolor lobortis pharetra. Integer ultrices leo a nunc ullamcorper commodo. In id nulla et nibh pretium pretium non vel metus. Suspendisse dapibus quis lorem sit amet fermentum. Ut a dapibus justo. In faucibus molestie pretium. Cras eros orci, bibendum fringilla elit at, vehicula maximus eros. Aenean placerat aliquet mi, et pellentesque dolor gravida at.',
+        'I just love MyTurn’s innovative approach to gamified chores and see huge potential to make household chores fun and engaging for kids. I can’t wait to try the app!',
       image: {
-        src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: '',
+        src: TestimonialImage1,
+        alt: 'profile picture of Julija',
       },
-      icon: IconBrandTwitter,
-      href: '#',
+      // icon: IconBrandTwitter,
+      // href: '#',
     },
     {
-      name: 'Silver Jordan',
-      occupation: 'Senior Marketer',
+      name: 'Ana',
+      occupation: 'Working mom with 2 boys',
       comment:
-        'Mauris semper enim dolor, ac dictum sapien sollicitudin quis. Quisque id pharetra mi. Phasellus eu posuere lectus, vitae rhoncus velit. Nullam imperdiet purus quis dapibus vestibulum. Integer purus ex, hendrerit at elementum non, varius a nibh. Ut eget convallis mi. Morbi mattis, felis sit amet consectetur scelerisque, odio purus ornare sapien, in feugiat lorem tellus et magna. Pellentesque luctus dolor in ornare mattis.',
+        'As a busy working mom, I struggled to motivate my kids to help with household activities. Thankfully, I foundrerit at elementum non, varius a nibh. Ut eget convallis mi. Morbi mattis, felis sit amet consectetur scelerisque, odio purus ornare sapien, in feugiat lorem tellus et magna. Pellentesque luctus dolor in ornare mattis.',
       image: {
-        src: 'https://images.unsplash.com/photo-1565049786474-1dea82a8b995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: '',
+        src: TestimonialImage2,
+        alt: 'profile picture of ana',
       },
-      icon: IconBrandTwitter,
-      href: '#',
+      // icon: IconBrandTwitter,
+      // href: '#',
     },
     {
-      name: 'Kelsey Arden',
-      occupation: 'Co-Founder & CEO',
+      name: 'Kally Barden',
+      occupation: 'Working mom with 1 girl and 1 boy',
       comment:
-        'Sed malesuada rhoncus arcu, sit amet condimentum leo pharetra feugiat. In augue quam, venenatis nec dui in, auctor tempus libero. Aliquam tempus ex id metus viverra blandit. Proin varius venenatis tortor, a pellentesque enim malesuada a. Aliquam lectus magna, interdum eget odio non, consequat imperdiet ipsum.',
+        "As a parent juggling work and home, I can't wait to try MyTurn to finally bring excitement to chores and get my kids involved without the usual resistance!",
       image: {
-        src: 'https://images.unsplash.com/photo-1659057106920-da022cfbc0cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
-        alt: '',
+        src: TestimonialImage3,
+        alt: 'profile picture of Kally',
       },
-      icon: IconBrandTwitter,
-      href: '#',
+      // icon: IconBrandTwitter,
+      // href: '#',
     },
   ],
 };
