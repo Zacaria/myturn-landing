@@ -528,8 +528,8 @@ export const featuresData: FeaturesProps = {
         What you get with <span className="whitespace-nowrap">MyTurn</span>
       </>
     ),
-    subtitle:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.',
+    // subtitle:
+    //   'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.',
     highlight: 'Features',
   },
   items: [
@@ -1580,7 +1580,7 @@ export const footerData2: FooterProps = {
     <div className="mr-4 text-sm ">
       {/* <span className="float-left mr-1.5 h-5 w-5 rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span> */}
       Made by{' '}
-      <a className="text-blue-600 hover:underline " href="https://myturn.me/">
+      <a className="text-blue-600 hover:underline " href="https://www.myturn.me/">
         {' '}
         MyTurn 🖐️
       </a>{' '}

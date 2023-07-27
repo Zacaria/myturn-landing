@@ -1,10 +1,10 @@
 module.exports.SITE = {
   name: 'MyTurn',
 
-  origin: 'https://myturn.me',
+  origin: 'https://www.myturn.me',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'MyTurn — Your everyday tool to motivate your children with chores',
+  title: 'MyTurn - Chore Motivation Transformed',
   description: 'MyTurn is a free app to help you motivate your children to do chores.',
 };
