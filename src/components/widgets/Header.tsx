@@ -76,7 +76,7 @@ const Header = () => {
           } w-auto overflow-y-auto  md:mx-5 md:flex md:h-auto md:items-center md:overflow-visible`}
           aria-label="Main navigation"
         >
-          <ul className="flex w-full flex-col pt-8 text-xl md:w-auto md:flex-row md:self-center md:pt-0 md:text-base">
+          <ul className="flex w-full flex-col pt-8 text-xl text-slate-600 md:w-auto md:flex-row md:self-center md:pt-0 md:text-base">
             {links &&
               links.map(({ label, labelElement, href, icon: Icon, links }, index) => (
                 <li key={`item-link-${index}`} className={links?.length ? 'dropdown' : ''}>

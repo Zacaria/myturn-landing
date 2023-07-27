@@ -29,6 +29,8 @@ const Footer2 = () => {
                   className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200   "
                   aria-label={label}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {Icon && <Icon className="h-5 w-5" />}
                 </a>

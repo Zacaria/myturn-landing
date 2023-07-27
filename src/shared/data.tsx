@@ -111,18 +111,22 @@ export const headerData: HeaderProps = {
     //     },
     //   ],
     // },
-    // {
-    //   label: 'Blog',
-    //   href: '/blog',
-    // },
-    // {
-    //   label: 'Contact',
-    //   href: '/contact',
-    // },
-    // {
-    //   labelElement: <MobileStoreButton store="ios" url={''} linkProps={{ title: 'iOS Store Button' }} />,
-    //   href: '/subscribe',
-    // },
+    {
+      label: 'Features',
+      href: '#features3',
+    },
+    {
+      label: 'Testimonial',
+      href: '#testimonial',
+    },
+    {
+      label: 'Team',
+      href: '#team',
+    },
+    {
+      label: 'Blog',
+      href: '/blog',
+    },
     // {
     //   labelElement: (
     //     <MobileStoreButton store="android" url={'/subscribe'} linkProps={{ title: 'Android Store Button' }} />
@@ -143,7 +147,7 @@ export const headerData: HeaderProps = {
     // btnType: 'primary',
     // },
   ],
-  isSticky: false,
+  isSticky: true,
   showToggleTheme: false,
   showRssFeed: false,
   position: 'right',
@@ -1562,7 +1566,7 @@ export const footerData2: FooterProps = {
     // },
     {
       title: 'Email',
-      texts: ['Office: contact@myturn.me', 'Site: https://myturn.me'],
+      texts: ['Office: contact@myturn.me', 'Site: https://www.myturn.me'],
     },
   ],
   socials: [
