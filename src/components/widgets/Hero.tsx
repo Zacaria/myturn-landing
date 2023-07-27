@@ -45,7 +45,7 @@ const Hero = (props: { data: HeroProps }) => {
   //             </h1>
   //           )}
   //           <div className="mx-auto max-w-3xl">
-  //             {subtitle && <p className="mb-6 text-xl font-normal text-gray-600 dark:text-slate-400">{subtitle}</p>}
+  //             {subtitle && <p className="mb-6 text-xl font-normal text-gray-600 ">{subtitle}</p>}
   //             <div className="flex max-w-none flex-col flex-nowrap gap-4 px-4 sm:flex-row sm:justify-center">
   //               {callToAction && <CTA data={callToAction} />}
   //               {callToAction2 && <CTA data={callToAction2} />}
@@ -57,7 +57,7 @@ const Hero = (props: { data: HeroProps }) => {
   //             <Image
   //               src={image.src}
   //               alt={image.alt}
-  //               className="mx-auto h-auto w-full rounded-md bg-gray-400 dark:bg-slate-700"
+  //               className="mx-auto h-auto w-full rounded-md bg-gray-400 "
   //               placeholder="blur"
   //               loading="eager"
   //               priority
@@ -74,14 +74,12 @@ const Hero = (props: { data: HeroProps }) => {
     <div className="m-auto px-6 pt-32 xl:container md:px-12 md:py-12">
       <div
         aria-hidden="true"
-        className="from-primaryLight to-secondaryLight absolute inset-0 my-auto h-32 w-96 rotate-45 bg-gradient-to-r opacity-50 blur-3xl dark:opacity-20"
+        className="from-primaryLight to-secondaryLight absolute inset-0 my-auto h-32 w-96 rotate-45 bg-gradient-to-r opacity-50 blur-3xl "
       ></div>
       <div className="relative lg:flex lg:items-center lg:gap-12">
         <div className="text-center sm:mx-auto sm:w-10/12 md:mt-12 md:w-2/3 lg:mr-auto lg:mt-0 lg:w-6/12 lg:text-left">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white md:text-3xl lg:text-4xl xl:text-4xl">
-            {title}
-          </h1>
-          <p className="my-8 text-gray-600 dark:text-gray-300">{subtitle}</p>
+          <h1 className="text-4xl font-bold text-gray-900  md:text-3xl lg:text-4xl xl:text-4xl">{title}</h1>
+          <p className="my-8 text-gray-600 ">{subtitle}</p>
           <Countdown />
           <SubscribeForm {...form} />
           <div className="mt-12 flex justify-between gap-6 lg:gap-12">
@@ -122,7 +120,7 @@ const Hero = (props: { data: HeroProps }) => {
           <Image
             src={image.src}
             alt={image.alt}
-            className="mx-auto h-auto w-full rounded-md bg-gray-400 dark:bg-slate-700"
+            className="mx-auto h-auto w-full rounded-md bg-gray-400 "
             placeholder="blur"
             loading="eager"
             priority

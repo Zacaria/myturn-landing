@@ -3,7 +3,7 @@ import { FAQsProps, Item } from '~/shared/types';
 import HeaderWidget from '../common/HeaderWidget';
 
 const FAQs = ({ header, items }: FAQsProps) => (
-  <section className="bg-primary-50 dark:bg-slate-800" id="faqsOne">
+  <section className="bg-primary-50 " id="faqsOne">
     <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
       {header && <HeaderWidget header={header} titleClassname="text-3xl sm:text-4xl" />}
       <div className="max-w-screen-xl sm:mx-auto">
@@ -18,7 +18,7 @@ const FAQs = ({ header, items }: FAQsProps) => (
                   />
                   {title}
                 </h3>
-                <div className="text-gray-700 dark:text-gray-400">{description}</div>
+                <div className="text-gray-700 ">{description}</div>
               </div>
             </div>
           ))}

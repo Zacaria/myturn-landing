@@ -7,11 +7,11 @@ const Testimonial = () => {
   const { header, testimonials } = testimonialData;
 
   return (
-    <section className="bg-primary-50 dark:bg-slate-800" id="testimonial">
+    <section className="bg-primary-50 " id="testimonial">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         {header && <HeaderWidget header={header} titleClassname="text-2xl sm:text-3xl" />}
         <div className="flex items-stretch justify-center">
-          <div className="grid grid-cols-3 gap-3 dark:text-white sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+          <div className="grid grid-cols-3 gap-3  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
             {testimonials.map(({ name, occupation, comment, image, icon: Icon, href }, index) => (
               <div
                 key={`item-testimonial-${index}`}
@@ -40,10 +40,8 @@ const Testimonial = () => {
                         <span className="">{occupation}</span>
                       </div>
                     </div>
-                    {comment && (
-                      <p className="m-b-30 font-light dark:text-slate-400">{`"${comment.slice(0, 150)}..."`}</p>
-                    )}
-                    {href && Icon && <Icon className="mx-auto mt-4 h-6 w-6 text-primary-600 dark:text-slate-200" />}
+                    {comment && <p className="m-b-30 font-light ">{`"${comment.slice(0, 150)}..."`}</p>}
+                    {href && Icon && <Icon className="mx-auto mt-4 h-6 w-6 text-primary-600 " />}
                   </a>
                 </div>
               </div>

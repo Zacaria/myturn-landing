@@ -14,7 +14,7 @@ type FormData = FieldValues & {
 const IconMail = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="m-auto h-6 w-6 fill-blue-900/60 dark:fill-gray-400"
+    className="m-auto h-6 w-6 fill-blue-900/60 "
     viewBox="0 0 20 20"
     fill="currentColor"
   >
@@ -58,14 +58,14 @@ export const SubscribeForm = ({ btn, inputs }: FormProps) => {
         onSubmit={handleSubmit(onSubmit)}
         id="subscribe"
       >
-        <div className="border-primary/10 relative flex w-full items-center rounded-lg rounded-l-lg border bg-white shadow-md dark:border-gray-700 dark:bg-gray-900">
+        <div className="border-primary/10 relative flex w-full items-center rounded-lg rounded-l-lg border bg-white shadow-md  ">
           <div className="py-1 pl-3">
             <IconMail />
           </div>
           <input
             autoComplete="email"
             placeholder={input.placeholder}
-            className="w-full bg-transparent p-2 placeholder-gray-600 dark:placeholder-white"
+            className="w-full bg-transparent p-2 placeholder-gray-600 "
             type="email"
             {...register('email')}
           />
@@ -75,7 +75,7 @@ export const SubscribeForm = ({ btn, inputs }: FormProps) => {
             className="sm:rounded-r-m rounded-r-lg bg-primary-700 px-5 py-3 font-bold sm:rounded-l-none "
           >
             <span className="relative hidden w-max text-sm font-semibold text-slate-50 md:block">{btn.title}</span>
-            <IconPencil className="relative mx-auto h-6 w-6 text-slate-50 dark:text-gray-900 md:hidden" />
+            <IconPencil className="relative mx-auto h-6 w-6 text-slate-50  md:hidden" />
           </button>
         </div>
       </form>

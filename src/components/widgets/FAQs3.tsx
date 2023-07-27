@@ -5,7 +5,7 @@ import { CallToAction, FAQsProps, Item } from '~/shared/types';
 import CTA from '../common/CTA';
 
 const FAQs3 = ({ header, items, callToAction }: FAQsProps) => (
-  <section className="bg-primary-50 dark:bg-slate-800" id="faqsThree">
+  <section className="bg-primary-50 " id="faqsThree">
     <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
       <div className="flex items-stretch justify-center">
         <div className="grid w-full md:grid-cols-3 md:items-center md:gap-4">
@@ -16,9 +16,9 @@ const FAQs3 = ({ header, items, callToAction }: FAQsProps) => (
           <div className="mt-4 h-fit md:col-span-2 md:mx-4 md:mt-0 md:px-4">
             <Collapse
               items={items as Item[]}
-              classCollapseItem="border-b border-solid border-slate-300 dark:border-slate-500 py-5"
-              iconUp={<IconMinus className="h-6 w-6 text-primary-600 dark:text-slate-200" />}
-              iconDown={<IconPlus className="h-6 w-6 text-primary-600 dark:text-slate-200" />}
+              classCollapseItem="border-b border-solid border-slate-300  py-5"
+              iconUp={<IconMinus className="h-6 w-6 text-primary-600 " />}
+              iconDown={<IconPlus className="h-6 w-6 text-primary-600 " />}
             />
           </div>
         </div>
