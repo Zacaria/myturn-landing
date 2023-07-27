@@ -41,7 +41,7 @@ export default async function Page({ params: { lang } }: PageProps) {
     <>
       <Hero data={heroData} />
       {/* <SocialProof {...socialProofData} /> */}
-      {/* <Features3 {...featuresData} /> */}
+      <Features3 {...featuresData} />
       {/* <Content {...contentData} /> */}
       {/* <Content {...content2Data} /> */}
       <Steps />

@@ -173,6 +173,7 @@ interface HeroProps {
   callToAction?: CallToAction;
   callToAction2?: CallToAction;
   image: Image;
+  form: Partial<FormProps>;
 }
 
 interface FAQsProps {
@@ -191,7 +192,7 @@ interface CollapseProps {
 
 interface CallToActionProps {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   callToAction?: CallToAction;
   items?: Array<Item>;
 }

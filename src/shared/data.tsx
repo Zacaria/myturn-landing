@@ -148,13 +148,12 @@ export const headerData: HeaderProps = {
 
 // Hero data
 export const heroData: HeroProps = {
-  title: <>It&apos;s MyTurn 🖐️</>,
+  title: 'More fun for kids, less chores for you. ',
   subtitle: (
     <>
-      <span className="font-semibold decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
-        MyTurn
-      </span>{' '}
-      helps parents to motivate children to do the chores
+      <span className="font-semibold">MyTurn</span> is a time-effective and kids-engaging way of assigning chores. It is
+      your 5-minute solution to turn chores into fun adventures. Motivate and reward your kids with MyTurn&apos;s
+      gamified experience!
     </>
   ),
   callToAction: {
@@ -171,6 +170,19 @@ export const heroData: HeroProps = {
   image: {
     src: heroImg,
     alt: 'Hero TailNext',
+  },
+  form: {
+    btn: {
+      title: 'Engage your children',
+      type: 'submit',
+    },
+    inputs: [
+      {
+        placeholder: 'Your email',
+        type: 'email',
+        name: 'email',
+      },
+    ],
   },
 };
 
@@ -192,6 +204,19 @@ export const hero2Data: HeroProps = {
   image: {
     src: hero2Img,
     alt: 'Hero TailNext',
+  },
+  form: {
+    btn: {
+      type: 'submit',
+      title: 'Engage your children',
+    },
+    inputs: [
+      {
+        type: 'email',
+        name: 'email',
+        placeholder: 'Your email',
+      },
+    ],
   },
 };
 
@@ -438,30 +463,28 @@ export const faqs4Data: FAQsProps = {
 
 // CallToAction data
 export const callToActionData: CallToActionProps = {
-  title: 'Next.js + Tailwind CSS',
-  subtitle:
-    'Aliquam sodales porttitor lacus ac tristique. Etiam posuere elit at leo feugiat sodales. Sed ac mauris quis sem tempor condimentum non at metus.',
+  title: "Now it's Your Turn !",
+  // subtitle: null,
   callToAction: {
     text: 'Get template',
     href: 'https://github.com/onwidget/tailnext',
     icon: IconDownload,
   },
   items: [
-    {
-      title: 'Get template',
-      description: 'Aliquam sodales est lectus, quis.',
-      href: 'https://github.com/onwidget/tailnext',
-    },
-    {
-      title: 'Learn more',
-      description: 'Class aptent taciti sociosqu ad litora torquent per conubia.',
-      href: '/',
-    },
+    // {
+    //   title: 'Get template',
+    //   description: 'Aliquam sodales est lectus, quis.',
+    //   href: 'https://github.com/onwidget/tailnext',
+    // },
+    // {
+    //   title: 'Learn more',
+    //   description: 'Class aptent taciti sociosqu ad litora torquent per conubia.',
+    //   href: '/',
+    // },
     {
       title: 'Subscribe',
-      description: 'Morbi orci nunc, euismod ac dui id, convallis.',
+      // description: 'Morbi orci nunc, euismod ac dui id, convallis.',
       form: {
-        icon: IconMail,
         input: {
           type: 'email',
           name: 'email',
@@ -469,7 +492,7 @@ export const callToActionData: CallToActionProps = {
           placeholder: 'Enter your email address',
         },
         btn: {
-          title: 'Subscribe',
+          title: 'Try for free',
           type: 'submit',
         },
       },
@@ -503,65 +526,65 @@ export const featuresData: FeaturesProps = {
   },
   items: [
     {
-      title: 'Tasks management',
+      title: 'Delegate Chores Effortlessly in Just 5 Minutes!',
       description:
-        'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+        "Our list of predefined tasks streamlines chore delegation. Spend just 5 minutes assigning tasks, setting deadlines, and let our AI learn your kids' habits, ensuring timely notifications to keep chores on track.",
       icon: IconBrandTailwind,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
+      // link: {
+      //   label: 'Discover now',
+      //   href: '/',
+      // },
     },
     {
-      title: 'Gamification',
+      title: 'Motivation Made Simple with Reward System!',
       description:
-        'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+        "Unlock your children's enthusiasm for chores with our rewarding system. Even small incentives, like letting them choose a movie to watch, can ignite their motivation and turn household tasks into enjoyable experiences",
       icon: IconComponents,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
+      // link: {
+      //   label: 'Discover now',
+      //   href: '/',
+      // },
     },
     {
-      title: 'Motivation',
+      title: 'Turn Chores into Fun Adventures with Gamification!',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+        'Spark excitement with a points-based system! As your kids complete tasks, they earn stars and climb the leaderboard, transforming mundane chores into engaging games and making every achievement a thrilling accomplishment.',
       icon: IconListCheck,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
+      // link: {
+      //   label: 'Discover now',
+      //   href: '/',
+      // },
     },
     {
-      title: 'Excellent Page Speed',
+      title: 'Celebrate Little Heroes: Validate and Praise!',
       description:
-        'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+        'After each task, kids share photos of their accomplishments. Take the parent role and validate their efforts or offer encouraging feedback. Shower them with praise and acknowledgment for becoming household heroes!',
       icon: IconRocket,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
+      // link: {
+      //   label: 'Discover now',
+      //   href: '/',
+      // },
     },
-    {
-      title: 'Search Engine Optimization (SEO)',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-      icon: IconArrowsRightLeft,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
-    },
-    {
-      title: 'Open to new ideas and contributions',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-      icon: IconBulb,
-      link: {
-        label: 'Discover now',
-        href: '/',
-      },
-    },
+    // {
+    //   title: 'Search Engine Optimization (SEO)',
+    //   description:
+    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+    //   icon: IconArrowsRightLeft,
+    //   link: {
+    //     label: 'Discover now',
+    //     href: '/',
+    //   },
+    // },
+    // {
+    //   title: 'Open to new ideas and contributions',
+    //   description:
+    //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+    //   icon: IconBulb,
+    //   link: {
+    //     label: 'Discover now',
+    //     href: '/',
+    //   },
+    // },
   ],
 };
 
@@ -739,10 +762,10 @@ export const stepsData: StepsProps = {
 // Team data
 export const teamData: TeamProps = {
   header: {
-    title: 'Team Members',
+    title: 'Meet our team!',
     subtitle:
-      'Suspendisse in dui nibh. Donec enim leo, sodales et egestas id, malesuada non diam. Sed dapibus velit et mauris condimentum, vel imperdiet erat egestas.',
-    // highlight: 'Team',
+      'We are a dynamic team of 5 passionate professionals on a mission to revolutionize household chores for families and make it fun for kids and easy for parents.',
+    // highlight: 'Awesome',
   },
   teams: [
     {
@@ -1286,9 +1309,8 @@ export const subscribeData: SubscribeProps = {
     },
   ],
   form: {
-    title: 'Ready to Get Started?',
-    description:
-      'Mauris consequat, urna vel varius auctor, enim risus ornare felis, at hendrerit erat justo eu justo. Curabitur sagittis efficitur aliquam. Duis eget porttitor lectus, vel pharetra ex. Nam volutpat nibh ut porta egestas.',
+    title: 'We will be ready soon!',
+    description: 'Leave us your email to get notified when the apps are available on your store',
     inputs: [
       // {
       //   type: 'text',
@@ -1345,9 +1367,12 @@ export const subscribeData: SubscribeProps = {
       // },
     ],
     btn: {
-      title: 'Send Message',
+      title: 'Get notified',
       type: 'submit',
     },
+    // input: {
+    //   placeholder: 'Your email',
+    // },
   },
 };
 
@@ -1501,33 +1526,49 @@ export const footerData2: FooterProps = {
       label: 'Privacy Policy',
       href: '/privacy',
     },
+    {
+      labelElement: (
+        <div className="mx-2 inline-block">
+          <MobileStoreButton store="ios" url={''} linkProps={{ title: 'iOS Store Button' }} />
+        </div>
+      ),
+      href: '/subscribe',
+    },
+    {
+      labelElement: (
+        <div className="mx-2 inline-block">
+          <MobileStoreButton store="android" url={'/subscribe'} linkProps={{ title: 'Android Store Button' }} />
+        </div>
+      ),
+      href: '/subscribe',
+    },
   ],
   columns: [
-    {
-      title: 'Address',
-      texts: ['51 Phasellus Avenue Maecenas', 'Aliquam, AQ 52098'],
-    },
-    {
-      title: 'Phone',
-      texts: ['Reception: +105 123 4567', 'Office: +107 235 7890'],
-    },
+    // {
+    //   title: 'Address',
+    //   texts: ['51 Phasellus Avenue Maecenas', 'Aliquam, AQ 52098'],
+    // },
+    // {
+    //   title: 'Phone',
+    //   texts: ['Reception: +105 123 4567', 'Office: +107 235 7890'],
+    // },
     {
       title: 'Email',
-      texts: ['Office: info@example.com', 'Site: https://example.com'],
+      texts: ['Office: contact@myturn.me', 'Site: https://myturn.me'],
     },
   ],
   socials: [
     { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
     { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
     { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
-    { label: 'RSS', icon: IconRss, href: '#' },
-    { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/tailnext' },
+    // { label: 'RSS', icon: IconRss, href: '#' },
+    // { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/tailnext' },
   ],
   footNote: (
     <div className="mr-4 text-sm dark:text-slate-400">
       {/* <span className="float-left mr-1.5 h-5 w-5 rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)] bg-cover md:-mt-0.5 md:h-6 md:w-6"></span> */}
       Made by{' '}
-      <a className="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/">
+      <a className="text-blue-600 hover:underline dark:text-gray-200" href="https://myturn.me/">
         {' '}
         MyTurn 🖐️
       </a>{' '}

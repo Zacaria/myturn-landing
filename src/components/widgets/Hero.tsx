@@ -3,6 +3,7 @@ import { HeroProps } from '~/shared/types';
 import CTA from '../common/CTA';
 import { SubscribeForm } from '../common/SubscribeForm';
 import TestimonialImage from '~/assets/images/julija.jpg';
+import Countdown from './Countdown';
 
 const HeroTestimonial = () => {
   return (
@@ -31,7 +32,7 @@ const HeroTestimonial = () => {
 };
 
 const Hero = (props: { data: HeroProps }) => {
-  const { title, subtitle, callToAction, callToAction2, image } = props.data;
+  const { title, subtitle, callToAction, callToAction2, image, form } = props.data;
 
   // return (
   //   <section id="heroOne">
@@ -77,12 +78,12 @@ const Hero = (props: { data: HeroProps }) => {
       ></div>
       <div className="relative lg:flex lg:items-center lg:gap-12">
         <div className="text-center sm:mx-auto sm:w-10/12 md:mt-12 md:w-2/3 lg:mr-auto lg:mt-0 lg:w-6/12 lg:text-left">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white md:text-6xl lg:text-5xl xl:text-6xl">
-            {title} <span className="text-primary dark:text-primaryLight">Support.</span>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white md:text-3xl lg:text-4xl xl:text-4xl">
+            {title}
           </h1>
-          <p className="mt-8 text-gray-600 dark:text-gray-300">{subtitle}</p>
-          {/* SubscribeForm */}
-          <SubscribeForm />
+          <p className="my-8 text-gray-600 dark:text-gray-300">{subtitle}</p>
+          <Countdown />
+          <SubscribeForm {...form} />
           <div className="mt-12 flex justify-between gap-6 lg:gap-12">
             <HeroTestimonial />
             {/* <Image
@@ -117,7 +118,7 @@ const Hero = (props: { data: HeroProps }) => {
             /> */}
           </div>
         </div>
-        <div className="w-full overflow-hidden lg:-mr-16 lg:w-7/12">
+        <div className="mt-12 w-full overflow-hidden lg:-mr-16 lg:mt-0 lg:w-7/12">
           <Image
             src={image.src}
             alt={image.alt}

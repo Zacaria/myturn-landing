@@ -5,6 +5,7 @@ import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
 import { IconPencil } from '@tabler/icons-react';
+import { FormProps } from '~/shared/types';
 
 type FormData = FieldValues & {
   email: string;
@@ -32,7 +33,7 @@ const onSubmit = async (data: any) => {
   }
 };
 
-export const SubscribeForm = () => {
+export const SubscribeForm = ({ btn, inputs }: FormProps) => {
   const {
     register,
     handleSubmit,
@@ -43,6 +44,12 @@ export const SubscribeForm = () => {
   useEffect(() => {
     reset();
   }, [isSubmitSuccessful]);
+
+  let input = inputs ? inputs[0] : { placeholder: 'Your email' };
+
+  if (!btn) {
+    return null;
+  }
   return (
     <div className="w-full">
       <form
@@ -57,17 +64,17 @@ export const SubscribeForm = () => {
           </div>
           <input
             autoComplete="email"
-            placeholder="Your mail address"
+            placeholder={input.placeholder}
             className="w-full bg-transparent p-2 placeholder-gray-600 dark:placeholder-white"
             type="email"
             {...register('email')}
           />
           <button
-            type="submit"
-            title="Start buying"
-            className="sm:rounded-r-m rounded-r-lg bg-primary-700 px-5 py-5 font-bold sm:rounded-l-none "
+            type={btn.type}
+            title={btn.title}
+            className="sm:rounded-r-m rounded-r-lg bg-primary-700 px-5 py-3 font-bold sm:rounded-l-none "
           >
-            <span className="relative hidden w-max font-semibold text-slate-50 md:block">Try for free</span>
+            <span className="relative hidden w-max text-sm font-semibold text-slate-50 md:block">{btn.title}</span>
             <IconPencil className="relative mx-auto h-6 w-6 text-slate-50 dark:text-gray-900 md:hidden" />
           </button>
         </div>

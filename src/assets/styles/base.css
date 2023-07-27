@@ -25,11 +25,24 @@
 
   .navbar-active .hamburger div:first-child {
     @apply rotate-45 translate-y-1.5;
-    }
-    .navbar-active .hamburger div:last-child {
+  }
+  .navbar-active .hamburger div:last-child {
     @apply -rotate-45 -translate-y-1;
-    }
-    .navbar-active div:first-child div:first-child div:last-child{
-        @apply block lg:flex
-    }
+  }
+  .navbar-active div:first-child div:first-child div:last-child{
+    @apply block lg:flex
+  }
+
+  .animate-timer {
+    position: relative;
+     animation: animatetop 1s infinite;
+   }
+   @keyframes animatetop {
+     from {
+       top: -50px;
+     }
+     to {
+       top: 20px;
+     }
+   }
 }
