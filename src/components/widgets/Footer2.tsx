@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { footerData2 } from '~/shared/data';
 
 const Footer2 = () => {
@@ -6,7 +7,7 @@ const Footer2 = () => {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6">
       <div className="xs:gap-8 grid grid-cols-4 gap-4 gap-y-8 py-8 md:py-12">
-        {columns.map(({ title, texts }, index) => (
+        {columns.map(({ title, texts, links: colLinks }, index) => (
           <div
             key={`item-column-${index}`}
             className="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-1 xl:col-span-1"
@@ -16,6 +17,18 @@ const Footer2 = () => {
               texts.map((text, index2) => (
                 <p key={`item-text-${index2}`} className="text-gray-600 ">
                   {text}
+                </p>
+              ))}
+            {colLinks &&
+              colLinks.map(({ label, labelElement, href }, index) => (
+                <p key={`item-link-${index}`}>
+                  <a
+                    className="font-semibold text-primary-800 duration-150 ease-in-out placeholder:transition hover:text-gray-700 hover:underline "
+                    aria-label={label}
+                    href={href}
+                  >
+                    {labelElement || label}
+                  </a>
                 </p>
               ))}
           </div>

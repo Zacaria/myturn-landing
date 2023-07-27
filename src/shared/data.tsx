@@ -112,6 +112,10 @@ export const headerData: HeaderProps = {
     //   ],
     // },
     {
+      label: 'Home',
+      href: '#home',
+    },
+    {
       label: 'Features',
       href: '#features3',
     },
@@ -1567,6 +1571,31 @@ export const footerData2: FooterProps = {
     {
       title: 'Email',
       texts: ['Office: contact@myturn.me', 'Site: https://www.myturn.me'],
+    },
+    {
+      title: 'Sections',
+      links: [
+        {
+          label: 'Home',
+          href: '#home',
+        },
+        {
+          label: 'Features',
+          href: '#features3',
+        },
+        {
+          label: 'Testimonial',
+          href: '#testimonial',
+        },
+        {
+          label: 'Team',
+          href: '#team',
+        },
+        {
+          label: 'Blog',
+          href: '/blog',
+        },
+      ],
     },
   ],
   socials: [
