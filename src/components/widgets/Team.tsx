@@ -18,7 +18,7 @@ const Team = () => {
                   width={240}
                   height={320}
                   alt={image.alt}
-                  className="h-72 w-60 rounded-md object-cover"
+                  className="m-auto h-72 w-60 rounded-md object-cover"
                 />
                 <div className="relative mt-3 text-center">
                   <h3 className="mb-1.5 text-xl font-bold">{name}</h3>

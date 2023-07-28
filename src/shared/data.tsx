@@ -481,7 +481,7 @@ export const faqs4Data: FAQsProps = {
 
 // CallToAction data
 export const callToActionData: CallToActionProps = {
-  title: "Now it's Your Turn !",
+  title: "Now it's Your Turn!",
   subtitle: 'Join our growing community of parents who believe in raising responsible and motivated kids.',
   callToAction: {
     text: 'Get template',

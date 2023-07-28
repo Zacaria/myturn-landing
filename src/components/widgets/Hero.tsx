@@ -82,7 +82,7 @@ const Hero = (props: { data: HeroProps }) => {
           <p className="my-8 text-gray-600 ">{subtitle}</p>
           <p className="my-12">
             First 100 early birds get <span className="font-semibold">lifetime free access</span>. Valid until August
-            5th 2023. <span className="font-bold text-yellow-800">Sign up now !</span>
+            5th 2023. <span className="font-bold text-yellow-800">Sign up now!</span>
           </p>
           {/* <Countdown /> */}
           <div className="mt-12"></div>
