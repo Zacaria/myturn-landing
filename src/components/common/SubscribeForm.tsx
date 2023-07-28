@@ -25,7 +25,7 @@ const IconMail = () => (
 
 const onSubmit = async (data: any) => {
   try {
-    await axios.post('/api/subscribe', data);
+    await axios.post('/api/subscribe2', data);
     toast.success('Email sent, thank you !');
   } catch (e) {
     console.error(e);
