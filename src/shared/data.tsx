@@ -129,10 +129,10 @@ export const headerData: HeaderProps = {
       label: 'Team',
       href: '#team',
     },
-    {
-      label: 'Blog',
-      href: '/blog',
-    },
+    // {
+    //   label: 'Blog',
+    //   href: '/blog',
+    // },
     // {
     //   labelElement: (
     //     <MobileStoreButton store="android" url={'/subscribe'} linkProps={{ title: 'Android Store Button' }} />
@@ -1491,10 +1491,10 @@ export const footerData: FooterProps = {
           label: 'About',
           href: '/',
         },
-        {
-          label: 'Blog',
-          href: '/blog',
-        },
+        // {
+        //   label: 'Blog',
+        //   href: '/blog',
+        // },
         {
           label: 'Careers',
           href: '/',
@@ -1598,10 +1598,10 @@ export const footerData2: FooterProps = {
           label: 'Team',
           href: '#team',
         },
-        {
-          label: 'Blog',
-          href: '/blog',
-        },
+        // {
+        //   label: 'Blog',
+        //   href: '/blog',
+        // },
       ],
     },
   ],

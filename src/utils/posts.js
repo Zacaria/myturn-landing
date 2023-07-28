@@ -16,8 +16,6 @@ const load = () => {
       }),
   );
 
-  
-
   return posts;
 };
 
