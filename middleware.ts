@@ -23,9 +23,16 @@ export function middleware(request: NextRequest) {
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`,
   );
 
+  // console.log('middleware');
+
   // Redirect if there is no locale
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request);
+
+    // if (pathname === '/') {
+    //   // If the incoming request is for the root, no need for the trailing slash
+    //   return NextResponse.redirect(new URL(`/${locale}`, request.url));
+    // }
 
     // e.g. incoming request is /products
     // The new URL is now /en-US/products
