@@ -96,7 +96,7 @@ export const SubscribeForm = ({ btn, inputs }: FormProps) => {
             className="sm:rounded-r-m flex rounded-r-lg bg-primary-700 px-5 py-3 font-bold disabled:bg-primary-900 sm:rounded-l-none"
             disabled={isSubmitting}
           >
-            {<IconLoading />}
+            {isSubmitting && <IconLoading />}
             <span className="relative hidden w-max text-sm font-semibold text-slate-50 md:block">{btn.title}</span>
             <IconPencil className="relative mx-auto h-6 w-6 text-slate-50 md:hidden" />
           </button>
