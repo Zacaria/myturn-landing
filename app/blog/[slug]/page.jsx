@@ -17,7 +17,8 @@ export async function generateMetadata({ params}) {
 }
 
 export async function generateStaticParams() {
-  return (await findLatestPosts()).map(({ slug }) => ({ slug }));
+  return (await findLatestPosts())
+    .map(({ slug }) => ({ slug }));
 }
 
 export default async function Page({ params }) {

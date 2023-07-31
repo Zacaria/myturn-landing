@@ -129,10 +129,10 @@ export const headerData: HeaderProps = {
       label: 'Team',
       href: '#team',
     },
-    // {
-    //   label: 'Blog',
-    //   href: '/blog',
-    // },
+    {
+      label: 'Blog',
+      href: '/blog',
+    },
     // {
     //   labelElement: (
     //     <MobileStoreButton store="android" url={'/subscribe'} linkProps={{ title: 'Android Store Button' }} />
