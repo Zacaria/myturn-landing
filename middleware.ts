@@ -4,8 +4,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { match } from '@formatjs/intl-localematcher';
 import Negotiator from 'negotiator';
 
-let locales = ['en', 'sr-ME', 'sr', 'pt-PT', 'pt'];
-let defaultLocale = 'en';
+export const locales = ['en', 'sr-ME', 'sr', 'pt-PT', 'pt'];
+const defaultLocale = 'en';
 
 // Get the preferred locale, similar to above or using a library
 function getLocale(request: NextRequest) {
@@ -22,8 +22,6 @@ export function middleware(request: NextRequest) {
   const pathnameIsMissingLocale = locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`,
   );
-
-  // console.log('middleware');
 
   // Redirect if there is no locale
   if (pathnameIsMissingLocale) {
@@ -49,6 +47,6 @@ export const config = {
      * - _next/image (image optimization files)
      * - favicon.ico (favicon file)
      */
-    '/((?!api|_next/static|_next/image|favicon.ico).*)',
+    '/((?!api|blog|_next/static|_next/image|favicon.ico).*)',
   ],
 };
