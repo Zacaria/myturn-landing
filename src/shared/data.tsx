@@ -59,7 +59,7 @@ import MobileStoreButton from '~/components/atoms/MobileStoreButton';
 import CEOImage from '~/assets/images/ivana.jpg';
 import CMOImage from '~/assets/images/milica.jpg';
 import CPOImage from '~/assets/images/carley.jpg';
-import CDOImage from '~/assets/images/joao.png';
+import CDOImage from '~/assets/images/joao.jpg';
 import CTOImage from '~/assets/images/zacaria.png';
 import TestimonialImage1 from '~/assets/images/julija.jpg';
 import TestimonialImage2 from '~/assets/images/ana.png';
