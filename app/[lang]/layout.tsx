@@ -12,8 +12,14 @@ import { Inter as CustomFont } from 'next/font/google';
 import '~/assets/styles/base.css';
 import CookieConsent from '~/components/widgets/CookieConsent';
 import GoogleAnalytics from '~/components/widgets/GoogleAnalytics';
+import { dir } from 'i18next';
+import { languages } from '../i18n/settings';
 
 const customFont = CustomFont({ subsets: ['latin'], variable: '--font-custom' });
+
+export async function generateStaticParams() {
+  return languages.map((lng) => ({ lng }));
+}
 
 export interface LayoutProps {
   children: React.ReactNode;

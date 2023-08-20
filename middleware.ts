@@ -3,24 +3,22 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { match } from '@formatjs/intl-localematcher';
 import Negotiator from 'negotiator';
-
-export const locales = ['en', 'sr-ME', 'sr', 'pt-PT', 'pt'];
-const defaultLocale = 'en';
+import { fallbackLng, languages } from 'app/i18n/settings';
 
 // Get the preferred locale, similar to above or using a library
 function getLocale(request: NextRequest) {
-  let languages = new Negotiator({
+  let acceptLanguages = new Negotiator({
     headers: { 'accept-language': request.headers.get('accept-language') },
   }).languages();
 
-  return match(languages, locales, defaultLocale);
+  return match(acceptLanguages, languages, fallbackLng);
 }
 
 export function middleware(request: NextRequest) {
   // Check if there is any supported locale in the pathname
   const pathname = request.nextUrl.pathname;
-  const pathnameIsMissingLocale = locales.every(
-    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`,
+  const pathnameIsMissingLocale = languages.every(
+    (lang) => !pathname.startsWith(`/${lang}/`) && pathname !== `/${lang}`,
   );
 
   // Redirect if there is no locale

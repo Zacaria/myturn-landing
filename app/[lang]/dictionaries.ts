@@ -1,5 +1,4 @@
 import 'server-only';
-import 'server-only';
 
 interface DictionaryData {
   key: string;
@@ -10,6 +9,9 @@ type Dictionaries = Record<string, () => Promise<{} | DictionaryData>>;
 const dictionaries: Dictionaries = {
   en: () => import('./dictionaries/en.json').then((module) => module.default),
   sr: () => import('./dictionaries/sr.json').then((module) => module.default),
+  'sr-ME': () => import('./dictionaries/sr.json').then((module) => module.default),
+  pt: () => import('./dictionaries/pt.json').then((module) => module.default),
+  'pt-PT': () => import('./dictionaries/pt.json').then((module) => module.default),
 };
 
 export const getDictionary = async (locale: string) => dictionaries[locale]();

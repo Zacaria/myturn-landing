@@ -23,7 +23,7 @@ import {
   socialProofData,
 } from '~/shared/data';
 import Contact from '~/components/widgets/Contact';
-// import { getDictionary } from './dictionaries';
+import { getDictionary } from './dictionaries';
 
 export const metadata: Metadata = {
   title: SITE.title,
