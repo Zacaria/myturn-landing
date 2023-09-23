@@ -783,7 +783,7 @@ export const teamData: TeamProps = {
   header: {
     title: 'Meet our team!',
     subtitle:
-      'We are a dynamic team of 5 passionate professionals on a mission to revolutionize household chores for families and make it fun for kids and easy for parents.',
+      'We are a dynamic team of 3 passionate professionals on a mission to revolutionize household chores for families and make it fun for kids and easy for parents.',
     // highlight: 'Awesome',
   },
   teams: [

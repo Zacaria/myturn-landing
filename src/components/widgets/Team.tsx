@@ -10,9 +10,9 @@ const Team = () => {
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         {header && <HeaderWidget header={header} titleClassname="text-2xl sm:text-3xl" />}
         <div className="flex items-stretch justify-center">
-          <div className="grid grid-cols-1 gap-4  sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:grid-cols-3">
             {teams.map(({ name, occupation, image, items, line }, index) => (
-              <div key={`item-team-${index}`} className="p-2">
+              <div key={`item-team-${index}`} className="p-6">
                 <Image
                   src={image.src}
                   width={240}
