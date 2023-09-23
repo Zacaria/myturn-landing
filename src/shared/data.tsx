@@ -58,8 +58,9 @@ import typescriptLogo from '~/assets/images/typescript-logo.png';
 import MobileStoreButton from '~/components/atoms/MobileStoreButton';
 import CEOImage from '~/assets/images/ivana.jpg';
 import CMOImage from '~/assets/images/milica.jpg';
-import CPOImage from '~/assets/images/carley.jpg';
+// import CPOImage from '~/assets/images/carley.jpg';
 import CDOImage from '~/assets/images/joao.jpg';
+import CPOImage from '~/assets/images/lolita.jpeg';
 import CTOImage from '~/assets/images/zacaria.png';
 import TestimonialImage1 from '~/assets/images/julija.jpg';
 import TestimonialImage2 from '~/assets/images/ana.png';
@@ -838,13 +839,65 @@ export const teamData: TeamProps = {
         // },
       ],
     },
+    // {
+    //   name: 'Carley Spence',
+    //   occupation: 'Chief Product Officer',
+    //   line: 'Jedi mind trick expert who can design an app that keeps both parents and kids happily glued while ensuring everyone’s sanity stays intact!',
+    //   image: {
+    //     src: CPOImage,
+    //     alt: 'Carley Spence',
+    //   },
+    //   items: [
+    //     // {
+    //     //   title: 'Know more on Twitter',
+    //     //   icon: IconBrandTwitter,
+    //     //   href: '#',
+    //     // },
+    //     {
+    //       title: 'Know more on Linkedin',
+    //       icon: IconBrandLinkedin,
+    //       href: 'https://www.linkedin.com/in/carley-spence/',
+    //     },
+    //     // {
+    //     //   title: 'Contact by email',
+    //     //   icon: IconMail,
+    //     //   href: 'mailto:carley.spence@student.sl.on.ca',
+    //     // },
+    //   ],
+    // },
+    // {
+    //   name: 'João Adani',
+    //   occupation: 'Chief Design Officer',
+    //   line: 'Adds a splash of colorful imagination to the company’s canvas, turning innovative ideas into stunning masterpieces.',
+    //   image: {
+    //     src: CDOImage,
+    //     alt: 'João Adani',
+    //   },
+    //   items: [
+    //     // {
+    //     //   title: 'Know more on Twitter',
+    //     //   icon: IconBrandTwitter,
+    //     //   href: '#',
+    //     // },
+    //     {
+    //       title: 'Know more on Linkedin',
+    //       icon: IconBrandLinkedin,
+    //       href: 'https://www.linkedin.com/in/joão-adani-7866b2255/',
+    //     },
+    //     // {
+    //     //   title: 'Contact by email',
+    //     //   icon: IconMail,
+    //     //   href: '#',
+    //     // },
+    //   ],
+    // },
     {
-      name: 'Carley Spence',
+      name: 'Lolita Mikhailova',
       occupation: 'Chief Product Officer',
       line: 'Jedi mind trick expert who can design an app that keeps both parents and kids happily glued while ensuring everyone’s sanity stays intact!',
       image: {
         src: CPOImage,
-        alt: 'Carley Spence',
+        alt: 'Lolita Mikhailova',
       },
       items: [
         // {
@@ -855,59 +908,7 @@ export const teamData: TeamProps = {
         {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: 'https://www.linkedin.com/in/carley-spence/',
-        },
-        // {
-        //   title: 'Contact by email',
-        //   icon: IconMail,
-        //   href: 'mailto:carley.spence@student.sl.on.ca',
-        // },
-      ],
-    },
-    {
-      name: 'João Adani',
-      occupation: 'Chief Design Officer',
-      line: 'Adds a splash of colorful imagination to the company’s canvas, turning innovative ideas into stunning masterpieces.',
-      image: {
-        src: CDOImage,
-        alt: 'João Adani',
-      },
-      items: [
-        // {
-        //   title: 'Know more on Twitter',
-        //   icon: IconBrandTwitter,
-        //   href: '#',
-        // },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: 'https://www.linkedin.com/in/joão-adani-7866b2255/',
-        },
-        // {
-        //   title: 'Contact by email',
-        //   icon: IconMail,
-        //   href: '#',
-        // },
-      ],
-    },
-    {
-      name: 'Zacaria Chtatar',
-      occupation: 'Chief Technical Officer',
-      line: 'Coding ninja who not only builds exceptional tech but also stealthily ensures that bugs meet their demise!',
-      image: {
-        src: CTOImage,
-        alt: 'Zacaria Chtatar',
-      },
-      items: [
-        // {
-        //   title: 'Know more on Twitter',
-        //   icon: IconBrandTwitter,
-        //   href: '#',
-        // },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: 'https://www.linkedin.com/in/zacariachtatar/',
+          href: 'https://www.linkedin.com/in/lolita-mikhailova-384b34167/',
         },
         // {
         //   title: 'Contact by email',
@@ -916,6 +917,32 @@ export const teamData: TeamProps = {
         // },
       ],
     },
+    // {
+    //   name: 'Zacaria Chtatar',
+    //   occupation: 'Chief Technical Officer',
+    //   line: 'Coding ninja who not only builds exceptional tech but also stealthily ensures that bugs meet their demise!',
+    //   image: {
+    //     src: CTOImage,
+    //     alt: 'Zacaria Chtatar',
+    //   },
+    //   items: [
+    //     // {
+    //     //   title: 'Know more on Twitter',
+    //     //   icon: IconBrandTwitter,
+    //     //   href: '#',
+    //     // },
+    //     {
+    //       title: 'Know more on Linkedin',
+    //       icon: IconBrandLinkedin,
+    //       href: 'https://www.linkedin.com/in/zacariachtatar/',
+    //     },
+    //     // {
+    //     //   title: 'Contact by email',
+    //     //   icon: IconMail,
+    //     //   href: 'mailto:havesomecode@gmail.com',
+    //     // },
+    //   ],
+    // },
   ],
 };
 
